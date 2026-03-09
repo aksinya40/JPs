@@ -111,7 +111,9 @@ ROLE_EXCLUSION_PATTERNS = [
     r'\bSoftware Engineer\b', r'\bInfrastructure Engineer\b',
     r'\bData Platform Engineer\b', r'\bData Engineer\b',
     r'\bProduct Manager\b', r'\bTPM\b', r'\bAPM\b', r'\bProgram Manager\b',
-    r'\bResearch Scientist\b', r'\bDevOps\b', r'\bSecurity\b',
+    r'\bResearch Scientist\b', r'\bDevOps\b',
+    r'\bSecurity Engineer\b', r'\bSecurity Architect\b',
+    r'\bCybersecurity Analyst\b', r'\bInfoSec\b',
     r'\bFinance Analyst\b',
 ]
 
@@ -388,7 +390,8 @@ def extract_skills(text: str) -> Tuple[str, int, int]:
     t = text.lower()
     skills = []
     skill_patterns = [
-        ('Python', r'\bpython\b'), ('SQL', r'\bsql\b'), ('R', r'\br\b(?!\s*&)'),
+        ('Python', r'\bpython\b'), ('SQL', r'\bsql\b'),
+        ('R', r'(?<![A-Za-z])\bR\b(?!\s*&|\w)'),
         ('Tableau', r'\btableau\b'), ('Looker', r'\blooker\b'),
         ('Power BI', r'\bpower\s*bi\b'), ('Excel', r'\bexcel\b'),
         ('dbt', r'\bdbt\b'), ('Spark', r'\bspark\b'), ('Airflow', r'\bairflow\b'),
@@ -412,8 +415,15 @@ def extract_skills(text: str) -> Tuple[str, int, int]:
         ('LLM', r'\bllm\b'), ('RAG', r'\brag\b'),
     ]
     for name, pat in skill_patterns:
-        if re.search(pat, t, re.IGNORECASE):
+        if name == 'R':
+            # R needs case-sensitive match (uppercase R only)
+            if re.search(pat, text):  # use original text, not lowered
+                skills.append(name)
+        elif re.search(pat, t, re.IGNORECASE):
             skills.append(name)
+    # Validate: R alone is noise — require at least 1 other real skill
+    if skills == ['R']:
+        skills = []
     has_python = 1 if 'Python' in skills else 0
     has_sql = 1 if 'SQL' in skills else 0
     return ', '.join(skills), has_python, has_sql
@@ -458,6 +468,136 @@ def is_role_excluded(title: str) -> bool:
         if re.search(pat, title, re.IGNORECASE):
             return True
     return False
+
+
+## ── Data Quality Fix Utilities ─────────────────────────────────────────────
+
+ATS_SLUG_PATTERNS = [
+    (r'boards\.greenhouse\.io/([^/]+)/', lambda m: m.group(1).replace('-', ' ').title()),
+    (r'jobs\.lever\.co/([^/]+)/', lambda m: m.group(1).replace('-', ' ').title()),
+    (r'jobs\.ashbyhq\.com/([^/]+)/', lambda m: m.group(1).replace('-', ' ').title()),
+    (r'jobs\.([^.]+)\.com/', lambda m: m.group(1).replace('-', ' ').title()),
+]
+
+
+def extract_company_from_url(url: str) -> Optional[str]:
+    """Extract company name from ATS URL slug patterns."""
+    if not url:
+        return None
+    for pattern, formatter in ATS_SLUG_PATTERNS:
+        m = re.search(pattern, url)
+        if m:
+            name = formatter(m)
+            # Clean up known edge cases
+            name = re.sub(r'\d+$', '', name).strip()  # trailing numbers
+            return name if name else None
+    # LinkedIn: at-companyname
+    m = re.search(r'linkedin\.com/jobs/view/.*at-([a-z0-9-]+)', url, re.IGNORECASE)
+    if m:
+        return m.group(1).replace('-', ' ').title()
+    return None
+
+
+TITLE_SEGMENTS = {
+    r'\bapplied scientist\b': 'Applied Scientist',
+    r'\bstaff data scientist\b': 'Staff Data Scientist',
+    r'\bsenior data scientist\b|sr\.?\s+data scientist': 'Senior Data Scientist',
+    r'\bprincipal data scientist\b': 'Principal Data Scientist',
+    r'\blead data scientist\b': 'Lead Data Scientist',
+    r'\bdata scientist\b': 'Data Scientist',
+    r'\bdata science manager\b|manager.*data science': 'Data Science Manager',
+    r'\bdirector.*data|data.*director\b': 'Director, Data',
+    r'\banalytics engineer\b': 'Analytics Engineer',
+    r'\bsenior data analyst\b|sr\.?\s+data analyst': 'Senior Data Analyst',
+    r'\bdata analyst\b': 'Data Analyst',
+    r'\bproduct analyst\b': 'Product Analyst',
+    r'\bbusiness analyst\b': 'Business Analyst',
+    r'\boperations analyst\b|ops analyst': 'Operations Analyst',
+    r'\bgrowth analyst\b': 'Growth Analyst',
+    r'\bmarketing analyst\b': 'Marketing Analyst',
+    r'\bquantitative analyst\b|quant analyst': 'Quantitative Analyst',
+    r'\bdecision scientist\b': 'Decision Scientist',
+    r'\bresearch scientist\b': 'Research Scientist',
+    r'\bcompetitive intelligence analyst\b': 'Competitive Intelligence Analyst',
+}
+
+
+def normalize_title_to_segment(raw_title: str) -> str:
+    """Normalize a raw job title to a canonical segment (15-20 buckets)."""
+    if not raw_title:
+        return ''
+    t = raw_title.lower()
+    for pattern, canonical in TITLE_SEGMENTS.items():
+        if re.search(pattern, t):
+            return canonical
+    return raw_title  # fallback: keep raw if no match
+
+
+def strip_html(text: str) -> str:
+    """Strip HTML tags and collapse whitespace."""
+    if not text:
+        return text
+    clean = re.sub(r'<[^>]+>', ' ', text)
+    clean = re.sub(r'&[a-zA-Z]+;', ' ', clean)  # HTML entities
+    clean = re.sub(r'&\#\d+;', ' ', clean)  # numeric entities
+    clean = re.sub(r'\s+', ' ', clean).strip()
+    return clean
+
+
+BLOCKED_DOMAINS = {
+    'builtin.com', 'builtinnyc.com', 'builtinsf.com', 'builtinchicago.com',
+    'builtinaustin.com', 'builtinboston.com', 'builtincolorado.com',
+    'builtinla.com', 'builtinseattle.com',
+    'theladders.com', 'themuse.com', 'towardsai.net',
+    'wallstreetcareers.com', 'datasciencessjobs.com', 'technyjobs.com',
+    'wellfound.com', 'angel.co',
+}
+
+
+def is_aggregator_url(url: str) -> bool:
+    """Check if a URL belongs to a job aggregator (not primary ATS)."""
+    if not url:
+        return False
+    try:
+        from urllib.parse import urlparse
+        domain = urlparse(url).netloc.lstrip('www.')
+        return domain in BLOCKED_DOMAINS
+    except Exception:
+        return False
+
+
+REMOTE_PATTERNS = [r'\bremote\b', r'\bwork from home\b', r'\bwfh\b', r'\bfully remote\b']
+HYBRID_PATTERNS = [r'\bhybrid\b', r'\bflexible\b', r'\b\d+\s*days.*office\b']
+
+
+def resolve_work_mode(ats_work_mode: str, location_raw: str,
+                      location_standardized: str) -> str:
+    """Resolve work_mode from ATS field + location text."""
+    # Priority 1: ATS-provided value (if meaningful)
+    if ats_work_mode and ats_work_mode.lower() not in ('unknown', '', 'on-site'):
+        return ats_work_mode
+    # Priority 2: Infer from location text
+    loc = f"{location_raw or ''} {location_standardized or ''}".lower()
+    if any(re.search(p, loc) for p in REMOTE_PATTERNS):
+        return 'Remote'
+    if any(re.search(p, loc) for p in HYBRID_PATTERNS):
+        return 'Hybrid'
+    # Priority 3: if ATS explicitly said On-site AND nothing contradicts, keep it
+    if ats_work_mode and ats_work_mode.lower() == 'on-site':
+        return 'On-site'
+    return 'On-site'
+
+
+APPLIED_SCIENTIST_KEEP_KEYWORDS = [
+    'analytics', 'measurement', 'insights', 'ads science',
+    'experimentation', 'causal', 'decision', 'ranking',
+    'recommendation', 'personalization', 'search relevance',
+]
+APPLIED_SCIENTIST_REMOVE_KEYWORDS = [
+    'llm agent', 'code agent', 'foundation model', 'pretraining',
+    'robotics', 'computer vision', 'speech', 'autonomous',
+    'systems', 'infrastructure', 'compiler',
+]
 
 
 def log(msg: str):
@@ -1672,6 +1812,28 @@ def cmd_qa_check():
             _add_violation(gid, 'role_excluded', 'CRITICAL',
                            f'Title matches exclusion: {r["title"]}')
 
+        # unknown_company (new) — WARNING for isolated cases, escalated later
+        if r['company_name'] == 'Unknown':
+            _add_violation(gid, 'unknown_company', 'WARNING',
+                           f'company_name is Unknown, URL: {r["job_url"][:60]}')
+
+        # html_in_snippet (new)
+        snippet = r['description_snippet'] or ''
+        if '<' in snippet and '>' in snippet:
+            _add_violation(gid, 'html_in_snippet', 'WARNING',
+                           'description_snippet contains HTML tags')
+
+        # aggregator_url (new)
+        if is_aggregator_url(r['job_url']):
+            _add_violation(gid, 'aggregator_url', 'CRITICAL',
+                           f'Aggregator URL: {r["job_url"][:80]}')
+
+        # work_mode_contradiction (new)
+        loc_text = f"{r['location_raw'] or ''} {r['location_standardized'] or ''}".lower()
+        if r['work_mode'] == 'On-site' and any(re.search(p, loc_text) for p in REMOTE_PATTERNS):
+            _add_violation(gid, 'work_mode_contradiction', 'WARNING',
+                           f'work_mode=On-site but location has Remote')
+
         # date_out_of_window
         pd = r['posted_date']
         if pd and not r['date_uncertain']:
@@ -1700,6 +1862,14 @@ def cmd_qa_check():
         if not ds or len(ds) < 50:
             _add_violation(gid, 'missing_description', 'WARNING',
                            'description_snippet NULL or < 50 chars')
+
+    # unknown_company_high_count — CRITICAL if 5+ unknown companies
+    unknown_count = cur.execute(
+        "SELECT COUNT(*) FROM job_postings_gold WHERE company_name='Unknown' AND status='Open'"
+    ).fetchone()[0]
+    if unknown_count >= 5:
+        _add_violation(None, 'unknown_company_high_count', 'CRITICAL',
+                       f'{unknown_count} rows with company_name=Unknown')
 
     # date_uncertain_high_ratio
     uncertain = cur.execute(
@@ -2241,6 +2411,290 @@ See AI Role Signature analysis in Section 4 for emerging title patterns.
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
+# COMMAND: fix_data_quality
+# ═══════════════════════════════════════════════════════════════════════════════
+
+def cmd_fix_data_quality():
+    """Run all 11 data quality fixes in correct dependency order.
+
+    Steps:
+    1. DELETE non-US rows (is_us=0)
+    2. DELETE aggregator URLs (builtin, theladders, etc.)
+    3. Fix company_name='Unknown' from URL slug
+    4. Strip HTML from description_snippet
+    5. Re-extract skills_extracted with fixed regex
+    6. Build title_normalized taxonomy (15-segment)
+    7. Fix work_mode / location contradictions
+    8. Fix salary_text corruption
+    9. Re-compute posted_date date_uncertain flag (no ATS re-call)
+    10. Classify Applied Scientist keep/remove
+    11. Add in_target_list column
+    """
+    conn = get_db()
+    cur = conn.cursor()
+
+    # ── Step 1: DELETE non-US rows ──
+    log("Step 1: Deleting non-US rows (is_us=0)...")
+    non_us = cur.execute(
+        "SELECT COUNT(*) FROM job_postings_gold WHERE is_us = 0"
+    ).fetchone()[0]
+    cur.execute("DELETE FROM job_postings_gold WHERE is_us = 0")
+    conn.commit()
+    log(f"  Deleted {non_us} non-US rows")
+
+    # ── Step 2: DELETE aggregator URLs ──
+    log("Step 2: Deleting aggregator URLs...")
+    agg_conditions = ' OR '.join(
+        f"job_url LIKE '%{d}%'" for d in [
+            'builtin.com', 'builtinnyc.com', 'builtinsf.com',
+            'builtinchicago.com', 'builtinaustin.com', 'builtinboston.com',
+            'builtincolorado.com', 'builtinla.com', 'builtinseattle.com',
+            'theladders.com', 'themuse.com', 'towardsai.net',
+            'wallstreetcareers.com', 'datasciencessjobs.com', 'technyjobs.com',
+            'wellfound.com', 'angel.co',
+        ]
+    )
+    before = cur.execute("SELECT COUNT(*) FROM job_postings_gold").fetchone()[0]
+    cur.execute(f"DELETE FROM job_postings_gold WHERE {agg_conditions}")
+    after = cur.execute("SELECT COUNT(*) FROM job_postings_gold").fetchone()[0]
+    conn.commit()
+    log(f"  Deleted {before - after} aggregator rows (was {before}, now {after})")
+
+    # ── Step 3: Fix company_name='Unknown' from URL slug ──
+    log("Step 3: Fixing company_name='Unknown' from URL slugs...")
+    unknown_rows = cur.execute(
+        "SELECT gold_id, job_url FROM job_postings_gold WHERE company_name = 'Unknown'"
+    ).fetchall()
+    fixed_companies = 0
+    for r in unknown_rows:
+        gid, url = r[0], r[1]
+        name = extract_company_from_url(url)
+        if name and name.lower() != 'unknown':
+            cur.execute(
+                "UPDATE job_postings_gold SET company_name = ? WHERE gold_id = ?",
+                (name, gid)
+            )
+            fixed_companies += 1
+    conn.commit()
+    log(f"  Fixed {fixed_companies}/{len(unknown_rows)} Unknown company names")
+
+    # ── Step 4: Strip HTML from description_snippet ──
+    log("Step 4: Stripping HTML from description_snippet...")
+    html_rows = cur.execute(
+        "SELECT gold_id, description_snippet FROM job_postings_gold "
+        "WHERE description_snippet LIKE '%<%' AND description_snippet IS NOT NULL"
+    ).fetchall()
+    for r in html_rows:
+        gid, snippet = r[0], r[1]
+        cleaned = strip_html(snippet)
+        if len(cleaned) > 500:
+            cleaned = cleaned[:500]
+        cur.execute(
+            "UPDATE job_postings_gold SET description_snippet = ? WHERE gold_id = ?",
+            (cleaned, gid)
+        )
+    conn.commit()
+    log(f"  Cleaned HTML from {len(html_rows)} description_snippets")
+
+    # ── Step 5: Re-extract skills with fixed regex ──
+    log("Step 5: Re-extracting skills with fixed R regex...")
+    all_rows = cur.execute(
+        "SELECT gold_id, description_snippet, title FROM job_postings_gold"
+    ).fetchall()
+    skills_fixed = 0
+    for r in all_rows:
+        gid = r[0]
+        text = f"{r[2] or ''} {r[1] or ''}"
+        new_skills, hp, hs = extract_skills(text)
+        cur.execute(
+            "UPDATE job_postings_gold SET skills_extracted=?, has_python=?, has_sql=? "
+            "WHERE gold_id=?",
+            (new_skills, hp, hs, gid)
+        )
+        skills_fixed += 1
+    conn.commit()
+    log(f"  Re-extracted skills for {skills_fixed} rows")
+
+    # ── Step 6: Build title_normalized taxonomy ──
+    log("Step 6: Normalizing title_normalized with taxonomy...")
+    title_rows = cur.execute(
+        "SELECT gold_id, title FROM job_postings_gold"
+    ).fetchall()
+    title_fixed = 0
+    for r in title_rows:
+        gid, title = r[0], r[1]
+        norm = normalize_title_to_segment(title)
+        if norm != title:
+            title_fixed += 1
+        cur.execute(
+            "UPDATE job_postings_gold SET title_normalized = ? WHERE gold_id = ?",
+            (norm, gid)
+        )
+    conn.commit()
+    distinct = cur.execute(
+        "SELECT COUNT(DISTINCT title_normalized) FROM job_postings_gold"
+    ).fetchone()[0]
+    log(f"  Normalized {title_fixed} titles → {distinct} distinct segments")
+
+    # ── Step 7: Fix work_mode / location contradictions ──
+    log("Step 7: Fixing work_mode / location contradictions...")
+    wm_rows = cur.execute(
+        "SELECT gold_id, work_mode, location_raw, location_standardized "
+        "FROM job_postings_gold"
+    ).fetchall()
+    wm_fixed = 0
+    for r in wm_rows:
+        gid = r[0]
+        old_wm = r[1] or 'Unknown'
+        new_wm = resolve_work_mode(old_wm, r[2], r[3])
+        if new_wm != old_wm:
+            cur.execute(
+                "UPDATE job_postings_gold SET work_mode = ? WHERE gold_id = ?",
+                (new_wm, gid)
+            )
+            wm_fixed += 1
+    conn.commit()
+    log(f"  Fixed {wm_fixed} work_mode contradictions")
+
+    # ── Step 8: Fix salary_text corruption ──
+    log("Step 8: Fixing salary_text corruption...")
+    corrupt = cur.execute("""
+        SELECT gold_id, salary_text, salary_min_usd, salary_max_usd
+        FROM job_postings_gold
+        WHERE salary_text IS NOT NULL
+          AND salary_max_usd IS NOT NULL
+          AND LENGTH(salary_text) > 0
+          AND salary_text LIKE '%1'
+          AND CAST(salary_max_usd AS TEXT) != ''
+    """).fetchall()
+    sal_fixed = 0
+    for r in corrupt:
+        gid, st, smin, smax = r[0], r[1], r[2], r[3]
+        if st and smax and st.endswith('1') and str(int(smax)) + '1' in st.replace(',', '').replace(' ', ''):
+            # Likely corruption: salary_text has has_ai_in_title=1 appended
+            clean_st = st[:-1]  # remove trailing "1"
+            # Reformat nicely
+            if smin and smax:
+                clean_st = f"${int(smin):,} - ${int(smax):,}"
+            cur.execute(
+                "UPDATE job_postings_gold SET salary_text = ? WHERE gold_id = ?",
+                (clean_st, gid)
+            )
+            sal_fixed += 1
+    conn.commit()
+    log(f"  Fixed {sal_fixed} corrupted salary_text values")
+
+    # ── Step 9: Re-check date_uncertain for rows with enriched posted_date ──
+    log("Step 9: Rechecking date_uncertain flags...")
+    # Only clear date_uncertain for rows that have been successfully enriched
+    # (enrich_status != 'pending'), since those dates came from ATS APIs
+    date_rows = cur.execute(
+        "SELECT gold_id, posted_date, date_uncertain, enrich_status FROM job_postings_gold "
+        "WHERE posted_date IS NOT NULL AND posted_date != '' AND date_uncertain = 1"
+    ).fetchall()
+    date_fixed = 0
+    for r in date_rows:
+        gid, pd, du, es = r[0], r[1], r[2], r[3]
+        # Only mark certain if enrichment confirmed the date
+        if es and es not in ('pending', 'failed', 'skipped'):
+            try:
+                datetime.strptime(pd[:10], '%Y-%m-%d')
+                cur.execute(
+                    "UPDATE job_postings_gold SET date_uncertain = 0 WHERE gold_id = ?",
+                    (gid,)
+                )
+                date_fixed += 1
+            except (ValueError, TypeError):
+                pass
+    conn.commit()
+    log(f"  Cleared date_uncertain for {date_fixed} enriched rows with valid dates")
+
+    # ── Step 10: Classify Applied Scientist scope ──
+    log("Step 10: Classifying Applied Scientist scope...")
+    as_rows = cur.execute(
+        "SELECT gold_id, title, description_snippet, ai_keywords_hit "
+        "FROM job_postings_gold WHERE title LIKE '%Applied Scientist%'"
+    ).fetchall()
+    kept = 0
+    removed = 0
+    for r in as_rows:
+        gid, title, desc, kw = r[0], r[1], r[2] or '', r[3] or ''
+        full_text = f"{title} {desc} {kw}".lower()
+        # Check remove keywords first (higher priority)
+        should_remove = any(k in full_text for k in APPLIED_SCIENTIST_REMOVE_KEYWORDS)
+        should_keep = any(k in full_text for k in APPLIED_SCIENTIST_KEEP_KEYWORDS)
+        if should_remove and not should_keep:
+            # Mark as excluded via status
+            cur.execute(
+                "UPDATE job_postings_gold SET role_cluster = 'Applied Scientist (Excluded)', "
+                "status = 'Excluded' WHERE gold_id = ?", (gid,)
+            )
+            removed += 1
+        else:
+            # Update role_cluster to Applied Scientist (distinct from Data Scientist)
+            cur.execute(
+                "UPDATE job_postings_gold SET role_cluster = 'Applied Scientist' "
+                "WHERE gold_id = ?", (gid,)
+            )
+            kept += 1
+    conn.commit()
+    log(f"  Applied Scientist: kept {kept}, excluded {removed}")
+
+    # ── Step 11: Add in_target_list column ──
+    log("Step 11: Adding in_target_list column...")
+    existing_cols = {r[1] for r in cur.execute(
+        "PRAGMA table_info(job_postings_gold)"
+    ).fetchall()}
+    if 'in_target_list' not in existing_cols:
+        cur.execute(
+            "ALTER TABLE job_postings_gold ADD COLUMN in_target_list INTEGER DEFAULT 0"
+        )
+    cur.execute("UPDATE job_postings_gold SET in_target_list = 1 WHERE company_id > 0")
+    # Also try matching by company_name against companies_200
+    cur.execute("""
+        UPDATE job_postings_gold
+        SET in_target_list = 1
+        WHERE company_name IN (SELECT company_name FROM companies_200)
+          OR company_name IN (SELECT canonical_name FROM companies_200)
+    """)
+    conn.commit()
+    in_target = cur.execute(
+        "SELECT COUNT(*) FROM job_postings_gold WHERE in_target_list = 1"
+    ).fetchone()[0]
+    total = cur.execute("SELECT COUNT(*) FROM job_postings_gold").fetchone()[0]
+    log(f"  in_target_list: {in_target}/{total} rows")
+
+    # ── Final summary ──
+    total = cur.execute("SELECT COUNT(*) FROM job_postings_gold").fetchone()[0]
+    active = cur.execute(
+        "SELECT COUNT(*) FROM job_postings_gold WHERE is_us=1 AND status='Open'"
+    ).fetchone()[0]
+    distinct_titles = cur.execute(
+        "SELECT COUNT(DISTINCT title_normalized) FROM job_postings_gold"
+    ).fetchone()[0]
+    unknowns = cur.execute(
+        "SELECT COUNT(*) FROM job_postings_gold WHERE company_name='Unknown'"
+    ).fetchone()[0]
+    html_remaining = cur.execute(
+        "SELECT COUNT(*) FROM job_postings_gold WHERE description_snippet LIKE '%<%'"
+    ).fetchone()[0]
+    r_only = cur.execute(
+        "SELECT COUNT(*) FROM job_postings_gold WHERE skills_extracted='R'"
+    ).fetchone()[0]
+
+    conn.close()
+
+    log(f"fix_data_quality COMPLETE:")
+    log(f"  Total rows:           {total}")
+    log(f"  Active US:            {active}")
+    log(f"  Distinct titles:      {distinct_titles}")
+    log(f"  Remaining Unknown:    {unknowns}")
+    log(f"  Remaining HTML:       {html_remaining}")
+    log(f"  R-only skills:        {r_only}")
+    log(f"  In target list:       {in_target}/{total}")
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
 # CLI ENTRY POINT
 # ═══════════════════════════════════════════════════════════════════════════════
 
@@ -2258,6 +2712,7 @@ COMMANDS = {
     'export_review': cmd_export_review,
     'approve_db': cmd_approve_db,
     'analyze_approved': cmd_analyze_approved,
+    'fix_data_quality': cmd_fix_data_quality,
 }
 
 

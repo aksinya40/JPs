@@ -1,31 +1,31 @@
 gold_id,company_name,title,job_url,source_platform,salary_min_usd,salary_max_usd
-182,Amazon,"Sr. Language Data Scientist, Alexa AI",https://amazon.jobs/en/jobs/3176082/sr-language-data-scientist-alexa-ai,Amazon Jobs,,
-69,Discord,Director of Data and Analytics Engineering,https://job-boards.greenhouse.io/discord/jobs/8210945002,Greenhouse,,
-111,Google,"Product Data Scientist III, Analytics Insights and Measurement",https://careers.google.com/jobs/results/90084101893038790/,Google Careers,,
-216,Databricks,"Senior Manager, Infrastructure Data Science",https://databricks.com/company/careers/open-positions/job?gh_jid=7734812002,Greenhouse,,
-122,Microsoft,Principal Data Scientist,https://microsoft.ai/job/principal-data-scientist/,microsoft.ai,,
+124,Apple,"Staff Data Science Engineer, Siri Runtime Systems and Interaction",https://jobs.apple.com/en-us/details/200649686-3337/staff-data-science-engineer-siri-runtime-systems-and-interaction,Apple Jobs,,
+327,Reddit,"Staff Data Scientist, Consumer",https://job-boards.greenhouse.io/reddit/jobs/6745284,Greenhouse,217000,303900
+238,Reddit,"Staff Data Scientist, Ads",https://job-boards.greenhouse.io/reddit/jobs/6706371,Greenhouse,217000,303900
+192,Amazon,"Data Science Manager, Prime Video",https://amazon.jobs/en/jobs/3132218/data-science-manager-prime-video,Amazon Jobs,,
+330,Twilio,Business Intelligence Analyst 3,https://job-boards.greenhouse.io/twilio/jobs/7292353,Greenhouse,,
+25,Evolutioniq 4354597208,Senior Data Scientist - LLM Evaluation (Medhub),https://www.linkedin.com/jobs/view/senior-data-scientist-llm-evaluation-medhub-at-evolutioniq-4354597208,LinkedIn,,
+80,SoFi,Senior Risk Analyst,https://sofi.com/careers/job/7637238003?gh_jid=7637238003,Greenhouse,,
+137,CrowdStrike,"Sr. Data Scientist, GenAI",https://crowdstrike.wd5.myworkdayjobs.com/en-US/crowdstrikecareers/job/Sr-Data-Scientist--GenAI--Remote--ESP-_R25572,Workday,,
+322,Okta,Senior Salesforce Product Analyst,https://www.okta.com/company/careers/opportunity/7645836?gh_jid=7645836,Greenhouse,,
+155,Amazon,"Applied Scientist, SPX AI Lab",https://amazon.jobs/en/jobs/3189116/applied-scientist-spx-ai-lab,Amazon Jobs,,
+282,OpenAI,"Data Scientist, Marketing Innovation",https://jobs.ashbyhq.com/openai/7f299784-2c75-4d73-99e5-1e5043ec7b48,Ashby,293000,325000
+215,Databricks,"Senior Manager, Infrastructure Data Science",https://databricks.com/company/careers/open-positions/job?gh_jid=7641390002,Greenhouse,,
+335,Cresta,Applied Data Scientist,https://job-boards.greenhouse.io/cresta/jobs/5119706008,Greenhouse,150000,200000
+38,Intercom,GTM Data Analyst - Integrated Campaigns,https://job-boards.greenhouse.io/intercom/jobs/7524848,Greenhouse,,
+254,Harvey AI,"Senior Data Scientist, GTM",https://jobs.ashbyhq.com/harvey/ca540d46-f031-4708-bec9-6f84d0245f8e/application,Ashby,170000,200000
+319,Okta,Business Analyst Intern (Summer 2026),https://www.okta.com/company/careers/opportunity/7617090?gh_jid=7617090,Greenhouse,,
+280,OpenAI,Fraud & Risk Analyst,https://jobs.ashbyhq.com/openai/2f13a80f-645e-44a6-9af8-f183d3409203,Ashby,252000,280000
+310,Elastic,Finance Reporting & Analytics Manager,https://jobs.elastic.co/jobs?gh_jid=7657471&gh_jid=7657471,Greenhouse,,
 6,Oracle,Senior Applied Scientist - Agentic AI,https://careers.oracle.com/en/job/318774,Oracle Careers,,
-10,Unknown,"Senior Manager, Decision Intelligence",https://eicl.fa.em5.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CORP/job/11700/,Other,,
+97,LangChain,Deal Strategy & Operations Analyst,https://jobs.ashbyhq.com/langchain/87430164-6617-4ad6-908f-79356be83445/application,Ashby,,
+241,Coinbase,Senior Risk Analyst,https://www.coinbase.com/careers/positions/7624672?gh_jid=7624672,Greenhouse,,
+211,Amazon,"Software Dev Engineer II, Measurement, Ad Tech, and Data Science (MADS)",https://amazon.jobs/en/jobs/3155394/software-dev-engineer-ii-measurement-ad-tech-and-data-science-mads,Amazon Jobs,,
+167,Amazon,"Applied Scientist, SPX AI Lab",https://amazon.jobs/en/jobs/3175182/applied-scientist-spx-ai-lab,Amazon Jobs,,
+206,Ramp,Senior Data Scientist | Growth,https://jobs.ashbyhq.com/ramp/41696f51-7b29-4e12-b528-46c2f6c4f5f7,Ashby,165800,228050
+8,Cvshealth,Lead Data Scientist - Agentic AI - Patient Safety,https://jobs.cvshealth.com/us/en/job/R0820452/Lead-Data-Scientist-Agentic-AI-Patient-Safety,CVS Health Careers,,
+343,Cisco,"Cisco hiring Data Scientist (Remote) in San Jose, CA | LinkedIn",https://www.linkedin.com/jobs/view/data-scientist-remote-at-cisco-4376549489,LinkedIn,,
+253,Harvey AI,"Senior Data Scientist, Marketing",https://jobs.ashbyhq.com/harvey/d03dcaae-05de-4344-aebc-803993827922/application,Ashby,170000,200000
+295,Shopify,Product Data Scientists,https://www.shopify.com/careers/product-data-scientists_e09145fa-617d-4746-8245-9481c9b40512,Shopify,,
+266,Perplexity AI,Analytics Engineer,https://jobs.ashbyhq.com/perplexity/fed8d2c4-9c82-43ad-a168-434146c759ff,Ashby,210000,330000
 351,Smartsheet,Principal Analytics Engineer (Data Architect) - Hybrid in Bangalore,https://job-boards.greenhouse.io/smartsheet/jobs/7395033,Greenhouse,,
-130,Netflix,Analytics Engineer 5 - Content Applied Science and Analytics,https://explore.jobs.netflix.net/careers/job/790313792322,Netflix,,
-5,Unknown,"Senior Data Scientist, Advanced Analytics",https://jobs.ashbyhq.com/trm-labs/bf275579-65a9-4611-8cef-8cd4d14ecb79,Ashby,,
-366,Match Group,Data Scientist Intern,https://jobs.lever.co/matchgroup/596091e0-9d8e-4a3a-92a6-5699386b833e,Lever,,
-107,Google,"Business Data Scientist, Statistics, Platform Analytics, Google Cloud",https://careers.google.com/jobs/results/116931683420119750/,Google Careers,,
-279,OpenAI,"Data Scientist, Business",https://jobs.ashbyhq.com/openai/fc72784d-f925-4f8d-aebc-eee72e7bf55c,Ashby,255000,405000
-347,Figure AI,Principal Data Analyst,https://job-boards.greenhouse.io/figure/jobs/8243123002,Greenhouse,158400,198000
-329,Twilio,Business Intelligence Analyst 2,https://job-boards.greenhouse.io/twilio/jobs/7280493,Greenhouse,,
-37,Intercom,Forward Deployed Data Scientist,https://job-boards.greenhouse.io/intercom/jobs/7410458,Greenhouse,,
-348,New Relic,Senior Product Analyst - Data Governance,https://job-boards.greenhouse.io/newrelic/jobs/4987225008,Greenhouse,,
-281,OpenAI,Content Integrity Analyst,https://jobs.ashbyhq.com/openai/77b85828-3d4f-4958-b5cf-4787ca04975a,Ashby,252000,280000
-209,ClickUp,Senior Pricing & Growth Analyst,https://jobs.ashbyhq.com/clickup/342a25a4-2d19-45b4-909b-a96444c9e226,Ashby,125000,162500
-157,Amazon,"Data Scientist, TSI Science",https://amazon.jobs/en/jobs/3188465/data-scientist-tsi-science,Amazon Jobs,,
-226,Lyft,"Data Scientist, Algorithms - Lyft Ads",https://app.careerpuck.com/job-board/lyft/job/8330398002?gh_jid=8330398002,Greenhouse,128000,160000
-210,ClickUp,Senior Data Scientist,https://jobs.ashbyhq.com/clickup/49141b90-5c87-4b85-86d3-5cf6d22fc216,Ashby,140000,190000
-139,Salesforce,Data Scientist - Einstein GPT / Generative AI Team,https://builtin.com/job/data-scientist/3817082,Built In,,
-162,Amazon,"Applied Scientist (Contract), Artificial General Intelligence",https://amazon.jobs/en/jobs/3179169/applied-scientist-contract-artificial-general-intelligence,Amazon Jobs,,
-300,Uber,Data Scientist III,https://job-boards.greenhouse.io/uberfreight/jobs/4956689008,Greenhouse,,
-323,Qualtrics,"Staff Data Scientist, Strategic Insights",https://www.qualtrics.com/careers/us/en/job/7560275?gh_jid=7560275,Greenhouse,,
-77,SoFi,"Senior Data Scientist, Member Insights - Growth",https://sofi.com/careers/job/7587079003?gh_jid=7587079003,Greenhouse,,
-177,Amazon,"Applied Scientist (Contract), Artificial General Intelligence",https://amazon.jobs/en/jobs/3166403/applied-scientist-contract-artificial-general-intelligence,Amazon Jobs,,
-333,xAI,Finance Expert - Macro Research Analyst,https://job-boards.greenhouse.io/xai/jobs/5039410007,Greenhouse,,
-243,Coinbase,Staff Risk Analyst,https://www.coinbase.com/careers/positions/7624857?gh_jid=7624857,Greenhouse,,

@@ -55,16 +55,19 @@ python scripts/job_db_pipeline.py backfill_skills
 python scripts/job_db_pipeline.py normalize_platforms
 python scripts/job_db_pipeline.py mine_salary_from_body
 
-# 6. QA + export for human review
+# 6. Run data quality fixes (11-step automated cleanup)
+python scripts/job_db_pipeline.py fix_data_quality
+
+# 7. QA + export for human review
 python scripts/job_db_pipeline.py qa_check
 python scripts/job_db_pipeline.py export_review
 
-# 7. Review CSV files in review/, fix any CRITICAL violations
+# 8. Review CSV files in review/, fix any CRITICAL violations
 
-# 8. Approve (blocked if CRITICAL > 0)
+# 9. Approve (blocked if CRITICAL > 0)
 python scripts/job_db_pipeline.py approve_db
 
-# 9. Generate dashboard + report (requires approval)
+# 10. Generate dashboard + report (requires approval)
 python scripts/job_db_pipeline.py analyze_approved
 ```
 
@@ -81,6 +84,7 @@ python scripts/job_db_pipeline.py analyze_approved
 | `backfill_title_ai` | Compute `has_ai_in_title` + `title_ai_terms` |
 | `backfill_ai_role_signature` | Classify AI role signature (7 priority tiers) |
 | `backfill_skills` | Extract `skills_extracted`, `has_python`, `has_sql` |
+| `fix_data_quality` | 11-step automated cleanup (non-US, aggregators, HTML, skills, titles, work_mode, etc.) |
 | `qa_check` | Run all QA rules, write violations table |
 | `export_review` | Export CSVs + qa_report.json to `review/` |
 | `approve_db` | Insert approval_state (blocked if CRITICAL > 0) |

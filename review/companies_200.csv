@@ -1,201 +1,201 @@
 company_id,company_name,canonical_name,tier,sector,hq_country,ats_platform,ats_platform_secondary,career_page_url,ats_board_slug,in_scope,created_at
-1,Meta,meta,Tier1,FAANG,US,Greenhouse,,https://www.metacareers.com/jobs,,1,2026-03-09 01:39:51
-2,Google,google,Tier1,FAANG,US,Other,,https://careers.google.com/jobs,,1,2026-03-09 01:39:51
-3,Apple,apple,Tier1,FAANG,US,Other,,https://jobs.apple.com,,1,2026-03-09 01:39:51
-4,Amazon,amazon,Tier1,FAANG,US,Other,,https://www.amazon.jobs,,1,2026-03-09 01:39:51
-5,Netflix,netflix,Tier1,FAANG,US,Lever,,https://jobs.netflix.com,,1,2026-03-09 01:39:51
-6,Microsoft,microsoft,Tier1,FAANG,US,Other,,https://careers.microsoft.com,,1,2026-03-09 01:39:51
-7,Nvidia,nvidia,Tier1,FAANG,US,Other,,https://nvidia.wd5.myworkdayjobs.com,,1,2026-03-09 01:39:51
-8,Tesla,tesla,Tier1,FAANG,US,Other,,https://www.tesla.com/careers,,1,2026-03-09 01:39:51
-9,OpenAI,openai,Tier2,AI Lab,US,Greenhouse,,https://boards.greenhouse.io/openai,,1,2026-03-09 01:39:51
-10,Anthropic,anthropic,Tier2,AI Lab,US,Lever,,https://jobs.lever.co/Anthropic,,1,2026-03-09 01:39:51
-11,Cohere,cohere,Tier2,AI Lab,US,Greenhouse,,https://boards.greenhouse.io/cohere,,1,2026-03-09 01:39:51
-12,Mistral AI,mistral_ai,Tier2,AI Lab,US,Lever,,https://jobs.lever.co/mistral,,1,2026-03-09 01:39:51
-13,Perplexity AI,perplexity_ai,Tier2,AI Lab,US,Greenhouse,,https://boards.greenhouse.io/perplexityai,,1,2026-03-09 01:39:51
-14,Character.ai,characterai,Tier2,AI Lab,US,Lever,,https://jobs.lever.co/character,,1,2026-03-09 01:39:51
-15,Scale AI,scale_ai,Tier2,AI Lab,US,Lever,,https://jobs.lever.co/scaleai,,1,2026-03-09 01:39:51
-16,Inflection AI,inflection_ai,Tier2,AI Lab,US,Greenhouse,,https://boards.greenhouse.io/inflectionai,,1,2026-03-09 01:39:51
-17,Runway ML,runway_ml,Tier2,AI Lab,US,Lever,,https://jobs.lever.co/runwayml,,1,2026-03-09 01:39:51
-18,Stability AI,stability_ai,Tier2,AI Lab,US,Greenhouse,,https://stability.ai/careers,,1,2026-03-09 01:39:51
-19,Midjourney,midjourney,Tier2,AI Lab,US,Greenhouse,,https://boards.greenhouse.io/midjourney,,1,2026-03-09 01:39:51
-20,Pika Labs,pika_labs,Tier2,AI Lab,US,Ashby,,https://jobs.ashbyhq.com/pika,,1,2026-03-09 01:39:51
-21,Hugging Face,hugging_face,Tier2,AI Lab,US,Lever,,https://jobs.lever.co/huggingface,,1,2026-03-09 01:39:51
-22,ElevenLabs,elevenlabs,Tier2,AI Lab,US,Greenhouse,,https://boards.greenhouse.io/elevenlabs,,1,2026-03-09 01:39:51
-23,Luma AI,luma_ai,Tier2,AI Lab,US,Greenhouse,,https://boards.greenhouse.io/lumaai,,1,2026-03-09 01:39:51
-24,Imbue,imbue,Tier2,AI Lab,US,Lever,,https://jobs.lever.co/imbue,,1,2026-03-09 01:39:51
-25,Together AI,together_ai,Tier2,AI Lab,US,Lever,,https://jobs.lever.co/together,,1,2026-03-09 01:39:51
-26,Fireworks AI,fireworks_ai,Tier2,AI Lab,US,Greenhouse,,https://boards.greenhouse.io/fireworksai,,1,2026-03-09 01:39:51
-27,AI21 Labs,ai21_labs,Tier2,AI Lab,US,Greenhouse,,https://boards.greenhouse.io/ai21labs,,1,2026-03-09 01:39:51
-28,Adept AI,adept_ai,Tier2,AI Lab,US,Greenhouse,,https://boards.greenhouse.io/adept,,1,2026-03-09 01:39:51
-29,Sierra AI,sierra_ai,Tier2,AI Lab,US,Ashby,,https://jobs.ashbyhq.com/sierra,,1,2026-03-09 01:39:51
-30,Glean,glean,Tier2,AI Lab,US,Greenhouse,,https://boards.greenhouse.io/glean,,1,2026-03-09 01:39:51
-31,Stripe,stripe,Tier3,FinTech/Unicorn,US,Greenhouse,,https://stripe.com/jobs,,1,2026-03-09 01:39:51
-32,Databricks,databricks,Tier3,Data/AI,US,Greenhouse,,https://boards.greenhouse.io/databricks,,1,2026-03-09 01:39:51
-33,Snowflake,snowflake,Tier3,Data/Cloud,US,Greenhouse,,https://boards.greenhouse.io/snowflake,,1,2026-03-09 01:39:51
-34,Palantir,palantir,Tier3,Data/AI,US,Lever,,https://jobs.lever.co/palantir,,1,2026-03-09 01:39:51
-35,Ramp,ramp,Tier3,FinTech,US,Greenhouse,,https://boards.greenhouse.io/ramp,,1,2026-03-09 01:39:51
-36,Rippling,rippling,Tier3,HR Tech,US,Greenhouse,,https://www.rippling.com/careers,,1,2026-03-09 01:39:51
-37,Brex,brex,Tier3,FinTech,US,Greenhouse,,https://boards.greenhouse.io/brex,,1,2026-03-09 01:39:51
-38,Plaid,plaid,Tier3,FinTech,US,Lever,,https://jobs.lever.co/plaid,,1,2026-03-09 01:39:51
-39,Canva,canva,Tier3,Design,US,Greenhouse,,https://boards.greenhouse.io/canva,,1,2026-03-09 01:39:51
-40,Figma,figma,Tier3,Design,US,Greenhouse,,https://boards.greenhouse.io/figma,,1,2026-03-09 01:39:51
-41,Notion,notion,Tier3,Productivity,US,Greenhouse,,https://boards.greenhouse.io/notion,,1,2026-03-09 01:39:51
-42,Airtable,airtable,Tier3,Productivity,US,Greenhouse,,https://boards.greenhouse.io/airtable,,1,2026-03-09 01:39:51
-43,Miro,miro,Tier3,Collaboration,US,Greenhouse,,https://boards.greenhouse.io/miro,,1,2026-03-09 01:39:51
-44,Webflow,webflow,Tier3,No-code,US,Greenhouse,,https://boards.greenhouse.io/webflow,,1,2026-03-09 01:39:51
-45,Linear,linear,Tier3,Productivity,US,Ashby,,https://jobs.ashbyhq.com/linear,,1,2026-03-09 01:39:51
-46,Retool,retool,Tier3,Dev Tools,US,Greenhouse,,https://boards.greenhouse.io/retool,,1,2026-03-09 01:39:51
-47,Cursor,cursor,Tier3,AI Dev Tools,US,Ashby,,https://jobs.ashbyhq.com/anysphere,,1,2026-03-09 01:39:51
-48,Salesforce,salesforce,Tier4,Enterprise SaaS,US,Other,,https://careers.salesforce.com,,1,2026-03-09 01:39:51
-49,ServiceNow,servicenow,Tier4,Enterprise SaaS,US,Other,,https://careers.servicenow.com,,1,2026-03-09 01:39:51
-50,Workday,workday,Tier4,HR Tech,US,Other,,https://workday.wd5.myworkdayjobs.com,,1,2026-03-09 01:39:51
-51,Oracle,oracle,Tier4,Enterprise,US,Other,,https://www.oracle.com/careers,,1,2026-03-09 01:39:51
-52,SAP,sap,Tier4,Enterprise,US,Other,,https://jobs.sap.com,,1,2026-03-09 01:39:51
-53,HubSpot,hubspot,Tier4,Marketing SaaS,US,Greenhouse,,https://boards.greenhouse.io/hubspot,,1,2026-03-09 01:39:51
-54,Zendesk,zendesk,Tier4,CX SaaS,US,Greenhouse,,https://boards.greenhouse.io/zendesk,,1,2026-03-09 01:39:51
-55,Atlassian,atlassian,Tier4,Dev Tools,US,Greenhouse,,https://boards.greenhouse.io/atlassian,,1,2026-03-09 01:39:51
-56,Twilio,twilio,Tier4,CPaaS,US,Greenhouse,,https://boards.greenhouse.io/twilio,,1,2026-03-09 01:39:51
-57,Okta,okta,Tier4,Identity,US,Greenhouse,,https://boards.greenhouse.io/okta,,1,2026-03-09 01:39:51
-58,CrowdStrike,crowdstrike,Tier4,Cybersecurity,US,Other,,https://crowdstrike.wd5.myworkdayjobs.com,,1,2026-03-09 01:39:51
-59,Palo Alto Networks,palo_alto_networks,Tier4,Cybersecurity,US,Other,,https://jobs.paloaltonetworks.com,,1,2026-03-09 01:39:51
-60,Datadog,datadog,Tier4,Observability,US,Greenhouse,,https://boards.greenhouse.io/datadog,,1,2026-03-09 01:39:51
-61,Splunk,splunk,Tier4,Observability,US,Other,,https://jobs.jobvite.com/splunk,,1,2026-03-09 01:39:51
-62,New Relic,new_relic,Tier4,Observability,US,Greenhouse,,https://boards.greenhouse.io/newrelic,,1,2026-03-09 01:39:51
-63,HashiCorp,hashicorp,Tier4,Infrastructure,US,Greenhouse,,https://boards.greenhouse.io/hashicorp,,1,2026-03-09 01:39:51
-64,Airbnb,airbnb,Tier5,Marketplace,US,Greenhouse,,https://boards.greenhouse.io/airbnb,,1,2026-03-09 01:39:51
-65,Uber,uber,Tier5,Rideshare,US,Greenhouse,,https://www.uber.com/us/en/careers,,1,2026-03-09 01:39:51
-66,Lyft,lyft,Tier5,Rideshare,US,Greenhouse,,https://boards.greenhouse.io/lyft,,1,2026-03-09 01:39:51
-67,DoorDash,doordash,Tier5,Delivery,US,Greenhouse,,https://boards.greenhouse.io/doordash,,1,2026-03-09 01:39:51
-68,Instacart,instacart,Tier5,Delivery,US,Greenhouse,,https://boards.greenhouse.io/instacart,,1,2026-03-09 01:39:51
-69,Grubhub,grubhub,Tier5,Delivery,US,Greenhouse,,https://boards.greenhouse.io/grubhub,,1,2026-03-09 01:39:51
-70,Etsy,etsy,Tier5,E-commerce,US,Greenhouse,,https://boards.greenhouse.io/etsy,,1,2026-03-09 01:39:51
-71,Shopify,shopify,Tier5,E-commerce,US,Other,,https://www.shopify.com/careers,,1,2026-03-09 01:39:51
-72,Pinterest,pinterest,Tier5,Social/Visual,US,Greenhouse,,https://boards.greenhouse.io/pinterest,,1,2026-03-09 01:39:51
-73,Snap,snap,Tier5,Social,US,Greenhouse,,https://boards.greenhouse.io/snap,,1,2026-03-09 01:39:51
-74,X (Twitter),x_(twitter),Tier5,Social,US,Greenhouse,,https://boards.greenhouse.io/twitter,,1,2026-03-09 01:39:51
-75,Reddit,reddit,Tier5,Social,US,Greenhouse,,https://boards.greenhouse.io/reddit,,1,2026-03-09 01:39:51
-76,Discord,discord,Tier5,Communication,US,Greenhouse,,https://boards.greenhouse.io/discord,,1,2026-03-09 01:39:51
-77,Roblox,roblox,Tier5,Gaming,US,Greenhouse,,https://boards.greenhouse.io/roblox,,1,2026-03-09 01:39:51
-78,Unity Technologies,unity_technologies,Tier5,Gaming,US,Greenhouse,,https://boards.greenhouse.io/unity,,1,2026-03-09 01:39:51
-79,Epic Games,epic_games,Tier5,Gaming,US,Greenhouse,,https://boards.greenhouse.io/epicgames,,1,2026-03-09 01:39:51
-80,Robinhood,robinhood,Tier6,FinTech,US,Greenhouse,,https://boards.greenhouse.io/robinhood,,1,2026-03-09 01:39:51
-81,Coinbase,coinbase,Tier6,Crypto,US,Greenhouse,,https://boards.greenhouse.io/coinbase,,1,2026-03-09 01:39:51
-82,Affirm,affirm,Tier6,FinTech,US,Greenhouse,,https://boards.greenhouse.io/affirm,,1,2026-03-09 01:39:51
-83,Klarna,klarna,Tier6,FinTech,US,Greenhouse,,https://boards.greenhouse.io/klarna,,1,2026-03-09 01:39:51
-84,Chime,chime,Tier6,FinTech,US,Greenhouse,,https://boards.greenhouse.io/chime,,1,2026-03-09 01:39:51
-85,SoFi,sofi,Tier6,FinTech,US,Greenhouse,,https://boards.greenhouse.io/sofi,,1,2026-03-09 01:39:51
-86,PayPal,paypal,Tier6,FinTech,US,Other,,https://jobs.pypl.io,,1,2026-03-09 01:39:51
-87,Block,block,Tier6,FinTech,US,Greenhouse,,https://boards.greenhouse.io/block,,1,2026-03-09 01:39:51
-88,Adyen,adyen,Tier6,FinTech,US,Greenhouse,,https://boards.greenhouse.io/adyen,,1,2026-03-09 01:39:51
-89,Marqeta,marqeta,Tier6,FinTech,US,Greenhouse,,https://boards.greenhouse.io/marqeta,,1,2026-03-09 01:39:51
-90,Braintree,braintree,Tier6,FinTech,US,Other,,https://paypal.eightfold.ai/careers,,1,2026-03-09 01:39:51
-91,Tempus AI,tempus_ai,Tier7,Health AI,US,Greenhouse,,https://boards.greenhouse.io/tempus,,1,2026-03-09 01:39:51
-92,Veeva Systems,veeva_systems,Tier7,Health SaaS,US,Greenhouse,,https://boards.greenhouse.io/veeva,,1,2026-03-09 01:39:51
-93,Flatiron Health,flatiron_health,Tier7,Health AI,US,Greenhouse,,https://boards.greenhouse.io/flatiron,,1,2026-03-09 01:39:51
-94,Recursion Pharmaceuticals,recursion_pharmaceuticals,Tier7,BioTech AI,US,Greenhouse,,https://boards.greenhouse.io/recursionpharmaceuticals,,1,2026-03-09 01:39:51
-95,Guardant Health,guardant_health,Tier7,Health AI,US,Greenhouse,,https://boards.greenhouse.io/guardanthealth,,1,2026-03-09 01:39:51
-96,Carbon Health,carbon_health,Tier7,Health AI,US,Greenhouse,,https://boards.greenhouse.io/carbonhealth,,1,2026-03-09 01:39:51
-97,Fal.ai,falai,Tier8,AI Infrastructure,US,Ashby,,https://jobs.ashbyhq.com/fal,,1,2026-03-09 01:39:51
-98,Baseten,baseten,Tier8,AI Infrastructure,US,Greenhouse,,https://boards.greenhouse.io/baseten,,1,2026-03-09 01:39:51
-99,Anyscale,anyscale,Tier8,AI Infrastructure,US,Greenhouse,,https://boards.greenhouse.io/anyscale,,1,2026-03-09 01:39:51
-100,Modal Labs,modal_labs,Tier8,AI Infrastructure,US,Ashby,,https://jobs.ashbyhq.com/modal,,1,2026-03-09 01:39:51
-101,Weights & Biases,weights_&_biases,Tier8,MLOps,US,Greenhouse,,https://boards.greenhouse.io/wandb,,1,2026-03-09 01:39:51
-102,Comet ML,comet_ml,Tier8,MLOps,US,Greenhouse,,https://boards.greenhouse.io/cometml,,1,2026-03-09 01:39:51
-103,Arize AI,arize_ai,Tier8,AI Observability,US,Greenhouse,,https://boards.greenhouse.io/arizeai,,1,2026-03-09 01:39:51
-104,LangChain,langchain,Tier8,AI Dev Tools,US,Ashby,,https://jobs.ashbyhq.com/langchain,,1,2026-03-09 01:39:51
-105,Verta AI,verta_ai,Tier8,MLOps,US,Greenhouse,,https://boards.greenhouse.io/verta,,1,2026-03-09 01:39:51
-106,Galileo,galileo,Tier8,AI Evaluation,US,Greenhouse,,https://boards.greenhouse.io/galileo,,1,2026-03-09 01:39:51
-107,Moveworks,moveworks,Tier8,Enterprise AI,US,Greenhouse,,https://boards.greenhouse.io/moveworks,,1,2026-03-09 01:39:51
-108,Writer,writer,Tier8,Enterprise AI,US,Greenhouse,,https://boards.greenhouse.io/writer,,1,2026-03-09 01:39:51
-109,Harvey AI,harvey_ai,Tier8,Legal AI,US,Ashby,,https://jobs.ashbyhq.com/harvey,,1,2026-03-09 01:39:51
-110,Dust,dust,Tier8,Enterprise AI,US,Ashby,,https://jobs.ashbyhq.com/dust,,1,2026-03-09 01:39:51
-111,LinkedIn,linkedin,Tier9,Social/Professional,US,Other,,https://careers.linkedin.com,,1,2026-03-09 01:39:51
-112,Spotify,spotify,Tier9,Media Tech,US,Greenhouse,,https://boards.greenhouse.io/spotify,,1,2026-03-09 01:39:51
-113,Zoom,zoom,Tier9,Communication,US,Greenhouse,,https://boards.greenhouse.io/zoom,,1,2026-03-09 01:39:51
-114,Dropbox,dropbox,Tier9,Cloud Storage,US,Greenhouse,,https://boards.greenhouse.io/dropbox,,1,2026-03-09 01:39:51
-115,Box,box,Tier9,Cloud Storage,US,Greenhouse,,https://boards.greenhouse.io/boxinc,,1,2026-03-09 01:39:51
-116,Asana,asana,Tier9,Productivity,US,Greenhouse,,https://boards.greenhouse.io/asana,,1,2026-03-09 01:39:51
-117,Monday.com,mondaycom,Tier9,Productivity,US,Greenhouse,,https://boards.greenhouse.io/mondaydotcom,,1,2026-03-09 01:39:51
-118,Intercom,intercom,Tier9,CX SaaS,US,Greenhouse,,https://boards.greenhouse.io/intercom,,1,2026-03-09 01:39:51
-119,Amplitude,amplitude,Tier9,Analytics SaaS,US,Greenhouse,,https://boards.greenhouse.io/amplitude,,1,2026-03-09 01:39:51
-120,Mixpanel,mixpanel,Tier9,Analytics SaaS,US,Greenhouse,,https://boards.greenhouse.io/mixpanel,,1,2026-03-09 01:39:51
-121,PostHog,posthog,Tier9,Analytics SaaS,US,Greenhouse,,https://boards.greenhouse.io/posthog,,1,2026-03-09 01:39:51
-122,dbt Labs,dbt_labs,Tier9,Data Tools,US,Greenhouse,,https://boards.greenhouse.io/dbtlabs,,1,2026-03-09 01:39:51
-123,Hex,hex,Tier9,Data Tools,US,Greenhouse,,https://boards.greenhouse.io/hex,,1,2026-03-09 01:39:51
-124,Looker,looker,Tier9,Analytics SaaS,US,Other,,https://careers.google.com,,1,2026-03-09 01:39:51
-125,Thoughtspot,thoughtspot,Tier9,Analytics SaaS,US,Greenhouse,,https://boards.greenhouse.io/thoughtspot,,1,2026-03-09 01:39:51
-126,Grammarly,grammarly,Tier10,AI Writing,US,Greenhouse,,https://boards.greenhouse.io/grammarly,,1,2026-03-09 01:39:51
-127,Duolingo,duolingo,Tier10,EdTech AI,US,Greenhouse,,https://boards.greenhouse.io/duolingo,,1,2026-03-09 01:39:51
-128,Quora,quora,Tier10,Content/AI,US,Greenhouse,,https://boards.greenhouse.io/quora,,1,2026-03-09 01:39:51
-129,Substack,substack,Tier10,Media,US,Greenhouse,,https://boards.greenhouse.io/substack,,1,2026-03-09 01:39:51
-130,Zapier,zapier,Tier10,Automation,US,Greenhouse,,https://boards.greenhouse.io/zapier,,1,2026-03-09 01:39:51
-131,Clay,clay,Tier10,Sales AI,US,Ashby,,https://jobs.ashbyhq.com/clay,,1,2026-03-09 01:39:51
-132,Apollo.io,apolloio,Tier10,Sales AI,US,Greenhouse,,https://boards.greenhouse.io/apolloio,,1,2026-03-09 01:39:51
-133,Outreach,outreach,Tier10,Sales AI,US,Greenhouse,,https://boards.greenhouse.io/outreach,,1,2026-03-09 01:39:51
-134,Gong,gong,Tier10,Revenue AI,US,Greenhouse,,https://boards.greenhouse.io/gong,,1,2026-03-09 01:39:51
-135,Salesloft,salesloft,Tier10,Sales AI,US,Greenhouse,,https://boards.greenhouse.io/salesloft,,1,2026-03-09 01:39:51
-136,Drift,drift,Tier10,Conversational AI,US,Greenhouse,,https://boards.greenhouse.io/drift,,1,2026-03-09 01:39:51
-137,Conversica,conversica,Tier10,Conversational AI,US,Greenhouse,,https://boards.greenhouse.io/conversica,,1,2026-03-09 01:39:51
-138,Guru,guru,Tier10,Knowledge AI,US,Greenhouse,,https://boards.greenhouse.io/guru,,1,2026-03-09 01:39:51
-139,Notion AI,notion_ai,Tier10,AI Productivity,US,Greenhouse,,https://boards.greenhouse.io/notion,,1,2026-03-09 01:39:51
-140,Coda,coda,Tier10,Productivity,US,Greenhouse,,https://boards.greenhouse.io/coda,,1,2026-03-09 01:39:51
-141,ClickUp,clickup,Tier10,Productivity,US,Greenhouse,,https://boards.greenhouse.io/clickup,,1,2026-03-09 01:39:51
-142,Slack,slack,Tier10,Communication,US,Other,,https://salesforce.wd1.myworkdayjobs.com,,1,2026-03-09 01:39:51
-143,Figma AI,figma_ai,Tier10,Design AI,US,Greenhouse,,https://boards.greenhouse.io/figma,,1,2026-03-09 01:39:51
-144,Canva AI,canva_ai,Tier10,Design AI,US,Greenhouse,,https://boards.greenhouse.io/canva,,1,2026-03-09 01:39:51
-145,Loom,loom,Tier10,Video AI,US,Greenhouse,,https://boards.greenhouse.io/loom,,1,2026-03-09 01:39:51
-146,Otter.ai,otterai,Tier10,AI Transcription,US,Greenhouse,,https://boards.greenhouse.io/otter,,1,2026-03-09 01:39:51
-147,Fireflies.ai,firefliesai,Tier10,AI Meeting,US,Other,,https://fireflies.ai/careers,,1,2026-03-09 01:39:51
-148,Tome,tome,Tier10,AI Presentation,US,Greenhouse,,https://boards.greenhouse.io/tome,,1,2026-03-09 01:39:51
-149,Perplexity Pro,perplexity_pro,Tier10,AI Search,US,Greenhouse,,https://boards.greenhouse.io/perplexityai,,1,2026-03-09 01:39:51
-150,You.com,youcom,Tier10,AI Search,US,Greenhouse,,https://boards.greenhouse.io/youcom,,1,2026-03-09 01:39:51
-151,Poe,poe,Tier10,AI Platform,US,Greenhouse,,https://boards.greenhouse.io/quora,,1,2026-03-09 01:39:51
-152,Replicate,replicate,Tier10,AI Infrastructure,US,Ashby,,https://jobs.ashbyhq.com/replicate,,1,2026-03-09 01:39:51
-153,Weights & Biases II,weights_&_biases_ii,Tier10,AI Tools,US,Greenhouse,,https://boards.greenhouse.io/wandb,,1,2026-03-09 01:39:51
-154,Clearbit,clearbit,Tier10,Data/AI,US,Greenhouse,,https://boards.greenhouse.io/clearbit,,1,2026-03-09 01:39:51
-155,Lusha,lusha,Tier10,Sales AI,US,Greenhouse,,https://boards.greenhouse.io/lusha,,1,2026-03-09 01:39:51
-156,ZoomInfo,zoominfo,Tier10,Sales AI,US,Greenhouse,,https://boards.greenhouse.io/zoominfo,,1,2026-03-09 01:39:51
-157,Demandbase,demandbase,Tier10,Marketing AI,US,Greenhouse,,https://boards.greenhouse.io/demandbase,,1,2026-03-09 01:39:51
-158,6sense,6sense,Tier10,Revenue AI,US,Greenhouse,,https://boards.greenhouse.io/6sense,,1,2026-03-09 01:39:51
-159,Chorus.ai,chorusai,Tier10,Revenue AI,US,Greenhouse,,https://boards.greenhouse.io/chorusai,,1,2026-03-09 01:39:51
-160,Clari,clari,Tier10,Revenue AI,US,Greenhouse,,https://boards.greenhouse.io/clari,,1,2026-03-09 01:39:51
-161,Highspot,highspot,Tier10,Sales Enablement,US,Greenhouse,,https://boards.greenhouse.io/highspot,,1,2026-03-09 01:39:51
-162,Seismic,seismic,Tier10,Sales Enablement,US,Greenhouse,,https://boards.greenhouse.io/seismic,,1,2026-03-09 01:39:51
-163,UiPath,uipath,Tier10,RPA/AI,US,Greenhouse,,https://boards.greenhouse.io/uipath,,1,2026-03-09 01:39:51
-164,C3.ai,c3ai,Tier10,Enterprise AI,US,Greenhouse,,https://boards.greenhouse.io/c3ai,,1,2026-03-09 01:39:51
-165,DataRobot,datarobot,Tier10,AutoML AI,US,Greenhouse,,https://boards.greenhouse.io/datarobot,,1,2026-03-09 01:39:51
-166,Automation Anywhere,automation_anywhere,Tier10,RPA/AI,US,Greenhouse,,https://boards.greenhouse.io/automationanywhere,,1,2026-03-09 01:39:51
-167,Samsara,samsara,Tier10,IoT/AI,US,Greenhouse,,https://boards.greenhouse.io/samsara,,1,2026-03-09 01:39:51
-168,ServiceTitan,servicetitan,Tier10,Field Service AI,US,Greenhouse,,https://boards.greenhouse.io/servicetitan,,1,2026-03-09 01:39:51
-169,FullStory,fullstory,Tier10,Digital Analytics,US,Greenhouse,,https://boards.greenhouse.io/fullstory,,1,2026-03-09 01:39:51
-170,Heap Analytics,heap_analytics,Tier10,Product Analytics,US,Greenhouse,,https://boards.greenhouse.io/heap,,1,2026-03-09 01:39:51
-171,Pendo,pendo,Tier10,Product Analytics AI,US,Greenhouse,,https://boards.greenhouse.io/pendo,,1,2026-03-09 01:39:51
-172,Contentsquare,contentsquare,Tier10,Digital Analytics,US,Greenhouse,,https://boards.greenhouse.io/contentsquare,,1,2026-03-09 01:39:51
-173,Quantum Metric,quantum_metric,Tier10,Analytics AI,US,Greenhouse,,https://boards.greenhouse.io/quantummetric,,1,2026-03-09 01:39:51
-174,UserTesting,usertesting,Tier10,UX Research AI,US,Greenhouse,,https://boards.greenhouse.io/usertesting,,1,2026-03-09 01:39:51
-175,Qualtrics,qualtrics,Tier10,Experience AI,US,Other,,https://www.qualtrics.com/careers,,1,2026-03-09 01:39:51
-176,Medallia,medallia,Tier10,Experience AI,US,Greenhouse,,https://boards.greenhouse.io/medallia,,1,2026-03-09 01:39:51
-177,Fivetran,fivetran,Tier10,Data Integration,US,Greenhouse,,https://boards.greenhouse.io/fivetran,,1,2026-03-09 01:39:51
-178,Airbyte,airbyte,Tier10,Data Integration,US,Greenhouse,,https://boards.greenhouse.io/airbyte,,1,2026-03-09 01:39:51
-179,Astronomer,astronomer,Tier10,Data Orchestration,US,Greenhouse,,https://boards.greenhouse.io/astronomer,,1,2026-03-09 01:39:51
-180,Monte Carlo Data,monte_carlo_data,Tier10,Data Observability,US,Greenhouse,,https://boards.greenhouse.io/montecarlodatamonitoring,,1,2026-03-09 01:39:51
-181,Starburst Data,starburst_data,Tier10,Data Query,US,Greenhouse,,https://boards.greenhouse.io/starburst,,1,2026-03-09 01:39:51
-182,Hightouch,hightouch,Tier10,Reverse ETL,US,Greenhouse,,https://boards.greenhouse.io/hightouch,,1,2026-03-09 01:39:51
-183,Census Analytics,census_analytics,Tier10,Reverse ETL,US,Greenhouse,,https://boards.greenhouse.io/census,,1,2026-03-09 01:39:51
-184,Wiz,wiz,Tier10,Cloud Security AI,US,Greenhouse,,https://boards.greenhouse.io/wiz,,1,2026-03-09 01:39:51
-185,Lacework,lacework,Tier10,Cloud Security AI,US,Greenhouse,,https://boards.greenhouse.io/lacework,,1,2026-03-09 01:39:51
-186,Vanta,vanta,Tier10,Compliance AI,US,Greenhouse,,https://boards.greenhouse.io/vanta,,1,2026-03-09 01:39:51
-187,Drata,drata,Tier10,Compliance AI,US,Greenhouse,,https://boards.greenhouse.io/drata,,1,2026-03-09 01:39:51
-188,Lattice,lattice,Tier10,People Analytics AI,US,Greenhouse,,https://boards.greenhouse.io/lattice,,1,2026-03-09 01:39:51
-189,Culture Amp,culture_amp,Tier10,People Analytics,US,Greenhouse,,https://boards.greenhouse.io/cultureamp,,1,2026-03-09 01:39:51
-190,Leapsome,leapsome,Tier10,HR AI,US,Greenhouse,,https://boards.greenhouse.io/leapsome,,1,2026-03-09 01:39:51
-191,Navan,navan,Tier10,Travel/Expense AI,US,Greenhouse,,https://boards.greenhouse.io/navan,,1,2026-03-09 01:39:51
-192,Mercury,mercury,Tier10,FinTech,US,Greenhouse,,https://boards.greenhouse.io/mercury,,1,2026-03-09 01:39:51
-193,Modern Treasury,modern_treasury,Tier10,Financial Ops AI,US,Greenhouse,,https://boards.greenhouse.io/moderntreasury,,1,2026-03-09 01:39:51
-194,Viz.ai,vizai,Tier10,Clinical AI,US,Greenhouse,,https://boards.greenhouse.io/vizai,,1,2026-03-09 01:39:51
-195,Innovaccer,innovaccer,Tier10,Health Data AI,US,Greenhouse,,https://boards.greenhouse.io/innovaccer,,1,2026-03-09 01:39:51
-196,Aidoc,aidoc,Tier10,Medical Imaging AI,US,Greenhouse,,https://boards.greenhouse.io/aidoc,,1,2026-03-09 01:39:51
-197,Sprinklr,sprinklr,Tier10,CX AI Platform,US,Greenhouse,,https://boards.greenhouse.io/sprinklr,,1,2026-03-09 01:39:51
-198,Productboard,productboard,Tier10,Product Intelligence,US,Greenhouse,,https://boards.greenhouse.io/productboard,,1,2026-03-09 01:39:51
-199,Benchling,benchling,Tier10,Lab AI,US,Greenhouse,,https://boards.greenhouse.io/benchling,,1,2026-03-09 01:39:51
-200,Sigma Computing,sigma_computing,Tier10,Analytics AI,US,Greenhouse,,https://boards.greenhouse.io/sigmacomputing,,1,2026-03-09 01:39:51
+1,Meta,meta,Tier1,FAANG,US,Greenhouse,,https://www.metacareers.com/jobs,,1,2026-03-09 02:52:58
+2,Google,google,Tier1,FAANG,US,Other,,https://careers.google.com/jobs,,1,2026-03-09 02:52:58
+3,Apple,apple,Tier1,FAANG,US,Other,,https://jobs.apple.com,,1,2026-03-09 02:52:58
+4,Amazon,amazon,Tier1,FAANG,US,Other,,https://www.amazon.jobs,,1,2026-03-09 02:52:58
+5,Netflix,netflix,Tier1,FAANG,US,Lever,,https://jobs.netflix.com,,1,2026-03-09 02:52:58
+6,Microsoft,microsoft,Tier1,FAANG,US,Other,,https://careers.microsoft.com,,1,2026-03-09 02:52:58
+7,Nvidia,nvidia,Tier1,FAANG,US,Other,,https://nvidia.wd5.myworkdayjobs.com,,1,2026-03-09 02:52:58
+8,Tesla,tesla,Tier1,FAANG,US,Other,,https://www.tesla.com/careers,,1,2026-03-09 02:52:58
+9,OpenAI,openai,Tier2,AI Lab,US,Greenhouse,,https://boards.greenhouse.io/openai,,1,2026-03-09 02:52:58
+10,Anthropic,anthropic,Tier2,AI Lab,US,Lever,,https://jobs.lever.co/Anthropic,,1,2026-03-09 02:52:58
+11,Cohere,cohere,Tier2,AI Lab,US,Greenhouse,,https://boards.greenhouse.io/cohere,,1,2026-03-09 02:52:58
+12,Mistral AI,mistral_ai,Tier2,AI Lab,US,Lever,,https://jobs.lever.co/mistral,,1,2026-03-09 02:52:58
+13,Perplexity AI,perplexity_ai,Tier2,AI Lab,US,Greenhouse,,https://boards.greenhouse.io/perplexityai,,1,2026-03-09 02:52:58
+14,Character.ai,characterai,Tier2,AI Lab,US,Lever,,https://jobs.lever.co/character,,1,2026-03-09 02:52:58
+15,Scale AI,scale_ai,Tier2,AI Lab,US,Lever,,https://jobs.lever.co/scaleai,,1,2026-03-09 02:52:58
+16,Inflection AI,inflection_ai,Tier2,AI Lab,US,Greenhouse,,https://boards.greenhouse.io/inflectionai,,1,2026-03-09 02:52:58
+17,Runway ML,runway_ml,Tier2,AI Lab,US,Lever,,https://jobs.lever.co/runwayml,,1,2026-03-09 02:52:58
+18,Stability AI,stability_ai,Tier2,AI Lab,US,Greenhouse,,https://stability.ai/careers,,1,2026-03-09 02:52:58
+19,Midjourney,midjourney,Tier2,AI Lab,US,Greenhouse,,https://boards.greenhouse.io/midjourney,,1,2026-03-09 02:52:58
+20,Pika Labs,pika_labs,Tier2,AI Lab,US,Ashby,,https://jobs.ashbyhq.com/pika,,1,2026-03-09 02:52:58
+21,Hugging Face,hugging_face,Tier2,AI Lab,US,Lever,,https://jobs.lever.co/huggingface,,1,2026-03-09 02:52:58
+22,ElevenLabs,elevenlabs,Tier2,AI Lab,US,Greenhouse,,https://boards.greenhouse.io/elevenlabs,,1,2026-03-09 02:52:58
+23,Luma AI,luma_ai,Tier2,AI Lab,US,Greenhouse,,https://boards.greenhouse.io/lumaai,,1,2026-03-09 02:52:58
+24,Imbue,imbue,Tier2,AI Lab,US,Lever,,https://jobs.lever.co/imbue,,1,2026-03-09 02:52:58
+25,Together AI,together_ai,Tier2,AI Lab,US,Lever,,https://jobs.lever.co/together,,1,2026-03-09 02:52:58
+26,Fireworks AI,fireworks_ai,Tier2,AI Lab,US,Greenhouse,,https://boards.greenhouse.io/fireworksai,,1,2026-03-09 02:52:58
+27,AI21 Labs,ai21_labs,Tier2,AI Lab,US,Greenhouse,,https://boards.greenhouse.io/ai21labs,,1,2026-03-09 02:52:58
+28,Adept AI,adept_ai,Tier2,AI Lab,US,Greenhouse,,https://boards.greenhouse.io/adept,,1,2026-03-09 02:52:58
+29,Sierra AI,sierra_ai,Tier2,AI Lab,US,Ashby,,https://jobs.ashbyhq.com/sierra,,1,2026-03-09 02:52:58
+30,Glean,glean,Tier2,AI Lab,US,Greenhouse,,https://boards.greenhouse.io/glean,,1,2026-03-09 02:52:58
+31,Stripe,stripe,Tier3,FinTech/Unicorn,US,Greenhouse,,https://stripe.com/jobs,,1,2026-03-09 02:52:58
+32,Databricks,databricks,Tier3,Data/AI,US,Greenhouse,,https://boards.greenhouse.io/databricks,,1,2026-03-09 02:52:58
+33,Snowflake,snowflake,Tier3,Data/Cloud,US,Greenhouse,,https://boards.greenhouse.io/snowflake,,1,2026-03-09 02:52:58
+34,Palantir,palantir,Tier3,Data/AI,US,Lever,,https://jobs.lever.co/palantir,,1,2026-03-09 02:52:58
+35,Ramp,ramp,Tier3,FinTech,US,Greenhouse,,https://boards.greenhouse.io/ramp,,1,2026-03-09 02:52:58
+36,Rippling,rippling,Tier3,HR Tech,US,Greenhouse,,https://www.rippling.com/careers,,1,2026-03-09 02:52:58
+37,Brex,brex,Tier3,FinTech,US,Greenhouse,,https://boards.greenhouse.io/brex,,1,2026-03-09 02:52:58
+38,Plaid,plaid,Tier3,FinTech,US,Lever,,https://jobs.lever.co/plaid,,1,2026-03-09 02:52:58
+39,Canva,canva,Tier3,Design,US,Greenhouse,,https://boards.greenhouse.io/canva,,1,2026-03-09 02:52:58
+40,Figma,figma,Tier3,Design,US,Greenhouse,,https://boards.greenhouse.io/figma,,1,2026-03-09 02:52:58
+41,Notion,notion,Tier3,Productivity,US,Greenhouse,,https://boards.greenhouse.io/notion,,1,2026-03-09 02:52:58
+42,Airtable,airtable,Tier3,Productivity,US,Greenhouse,,https://boards.greenhouse.io/airtable,,1,2026-03-09 02:52:58
+43,Miro,miro,Tier3,Collaboration,US,Greenhouse,,https://boards.greenhouse.io/miro,,1,2026-03-09 02:52:58
+44,Webflow,webflow,Tier3,No-code,US,Greenhouse,,https://boards.greenhouse.io/webflow,,1,2026-03-09 02:52:58
+45,Linear,linear,Tier3,Productivity,US,Ashby,,https://jobs.ashbyhq.com/linear,,1,2026-03-09 02:52:58
+46,Retool,retool,Tier3,Dev Tools,US,Greenhouse,,https://boards.greenhouse.io/retool,,1,2026-03-09 02:52:58
+47,Cursor,cursor,Tier3,AI Dev Tools,US,Ashby,,https://jobs.ashbyhq.com/anysphere,,1,2026-03-09 02:52:58
+48,Salesforce,salesforce,Tier4,Enterprise SaaS,US,Other,,https://careers.salesforce.com,,1,2026-03-09 02:52:58
+49,ServiceNow,servicenow,Tier4,Enterprise SaaS,US,Other,,https://careers.servicenow.com,,1,2026-03-09 02:52:58
+50,Workday,workday,Tier4,HR Tech,US,Other,,https://workday.wd5.myworkdayjobs.com,,1,2026-03-09 02:52:58
+51,Oracle,oracle,Tier4,Enterprise,US,Other,,https://www.oracle.com/careers,,1,2026-03-09 02:52:58
+52,SAP,sap,Tier4,Enterprise,US,Other,,https://jobs.sap.com,,1,2026-03-09 02:52:58
+53,HubSpot,hubspot,Tier4,Marketing SaaS,US,Greenhouse,,https://boards.greenhouse.io/hubspot,,1,2026-03-09 02:52:58
+54,Zendesk,zendesk,Tier4,CX SaaS,US,Greenhouse,,https://boards.greenhouse.io/zendesk,,1,2026-03-09 02:52:58
+55,Atlassian,atlassian,Tier4,Dev Tools,US,Greenhouse,,https://boards.greenhouse.io/atlassian,,1,2026-03-09 02:52:58
+56,Twilio,twilio,Tier4,CPaaS,US,Greenhouse,,https://boards.greenhouse.io/twilio,,1,2026-03-09 02:52:58
+57,Okta,okta,Tier4,Identity,US,Greenhouse,,https://boards.greenhouse.io/okta,,1,2026-03-09 02:52:58
+58,CrowdStrike,crowdstrike,Tier4,Cybersecurity,US,Other,,https://crowdstrike.wd5.myworkdayjobs.com,,1,2026-03-09 02:52:58
+59,Palo Alto Networks,palo_alto_networks,Tier4,Cybersecurity,US,Other,,https://jobs.paloaltonetworks.com,,1,2026-03-09 02:52:58
+60,Datadog,datadog,Tier4,Observability,US,Greenhouse,,https://boards.greenhouse.io/datadog,,1,2026-03-09 02:52:58
+61,Splunk,splunk,Tier4,Observability,US,Other,,https://jobs.jobvite.com/splunk,,1,2026-03-09 02:52:58
+62,New Relic,new_relic,Tier4,Observability,US,Greenhouse,,https://boards.greenhouse.io/newrelic,,1,2026-03-09 02:52:58
+63,HashiCorp,hashicorp,Tier4,Infrastructure,US,Greenhouse,,https://boards.greenhouse.io/hashicorp,,1,2026-03-09 02:52:58
+64,Airbnb,airbnb,Tier5,Marketplace,US,Greenhouse,,https://boards.greenhouse.io/airbnb,,1,2026-03-09 02:52:58
+65,Uber,uber,Tier5,Rideshare,US,Greenhouse,,https://www.uber.com/us/en/careers,,1,2026-03-09 02:52:58
+66,Lyft,lyft,Tier5,Rideshare,US,Greenhouse,,https://boards.greenhouse.io/lyft,,1,2026-03-09 02:52:58
+67,DoorDash,doordash,Tier5,Delivery,US,Greenhouse,,https://boards.greenhouse.io/doordash,,1,2026-03-09 02:52:58
+68,Instacart,instacart,Tier5,Delivery,US,Greenhouse,,https://boards.greenhouse.io/instacart,,1,2026-03-09 02:52:58
+69,Grubhub,grubhub,Tier5,Delivery,US,Greenhouse,,https://boards.greenhouse.io/grubhub,,1,2026-03-09 02:52:58
+70,Etsy,etsy,Tier5,E-commerce,US,Greenhouse,,https://boards.greenhouse.io/etsy,,1,2026-03-09 02:52:58
+71,Shopify,shopify,Tier5,E-commerce,US,Other,,https://www.shopify.com/careers,,1,2026-03-09 02:52:58
+72,Pinterest,pinterest,Tier5,Social/Visual,US,Greenhouse,,https://boards.greenhouse.io/pinterest,,1,2026-03-09 02:52:58
+73,Snap,snap,Tier5,Social,US,Greenhouse,,https://boards.greenhouse.io/snap,,1,2026-03-09 02:52:58
+74,X (Twitter),x_(twitter),Tier5,Social,US,Greenhouse,,https://boards.greenhouse.io/twitter,,1,2026-03-09 02:52:58
+75,Reddit,reddit,Tier5,Social,US,Greenhouse,,https://boards.greenhouse.io/reddit,,1,2026-03-09 02:52:58
+76,Discord,discord,Tier5,Communication,US,Greenhouse,,https://boards.greenhouse.io/discord,,1,2026-03-09 02:52:58
+77,Roblox,roblox,Tier5,Gaming,US,Greenhouse,,https://boards.greenhouse.io/roblox,,1,2026-03-09 02:52:58
+78,Unity Technologies,unity_technologies,Tier5,Gaming,US,Greenhouse,,https://boards.greenhouse.io/unity,,1,2026-03-09 02:52:58
+79,Epic Games,epic_games,Tier5,Gaming,US,Greenhouse,,https://boards.greenhouse.io/epicgames,,1,2026-03-09 02:52:58
+80,Robinhood,robinhood,Tier6,FinTech,US,Greenhouse,,https://boards.greenhouse.io/robinhood,,1,2026-03-09 02:52:58
+81,Coinbase,coinbase,Tier6,Crypto,US,Greenhouse,,https://boards.greenhouse.io/coinbase,,1,2026-03-09 02:52:58
+82,Affirm,affirm,Tier6,FinTech,US,Greenhouse,,https://boards.greenhouse.io/affirm,,1,2026-03-09 02:52:58
+83,Klarna,klarna,Tier6,FinTech,US,Greenhouse,,https://boards.greenhouse.io/klarna,,1,2026-03-09 02:52:58
+84,Chime,chime,Tier6,FinTech,US,Greenhouse,,https://boards.greenhouse.io/chime,,1,2026-03-09 02:52:58
+85,SoFi,sofi,Tier6,FinTech,US,Greenhouse,,https://boards.greenhouse.io/sofi,,1,2026-03-09 02:52:58
+86,PayPal,paypal,Tier6,FinTech,US,Other,,https://jobs.pypl.io,,1,2026-03-09 02:52:58
+87,Block,block,Tier6,FinTech,US,Greenhouse,,https://boards.greenhouse.io/block,,1,2026-03-09 02:52:58
+88,Adyen,adyen,Tier6,FinTech,US,Greenhouse,,https://boards.greenhouse.io/adyen,,1,2026-03-09 02:52:58
+89,Marqeta,marqeta,Tier6,FinTech,US,Greenhouse,,https://boards.greenhouse.io/marqeta,,1,2026-03-09 02:52:58
+90,Braintree,braintree,Tier6,FinTech,US,Other,,https://paypal.eightfold.ai/careers,,1,2026-03-09 02:52:58
+91,Tempus AI,tempus_ai,Tier7,Health AI,US,Greenhouse,,https://boards.greenhouse.io/tempus,,1,2026-03-09 02:52:58
+92,Veeva Systems,veeva_systems,Tier7,Health SaaS,US,Greenhouse,,https://boards.greenhouse.io/veeva,,1,2026-03-09 02:52:58
+93,Flatiron Health,flatiron_health,Tier7,Health AI,US,Greenhouse,,https://boards.greenhouse.io/flatiron,,1,2026-03-09 02:52:58
+94,Recursion Pharmaceuticals,recursion_pharmaceuticals,Tier7,BioTech AI,US,Greenhouse,,https://boards.greenhouse.io/recursionpharmaceuticals,,1,2026-03-09 02:52:58
+95,Guardant Health,guardant_health,Tier7,Health AI,US,Greenhouse,,https://boards.greenhouse.io/guardanthealth,,1,2026-03-09 02:52:58
+96,Carbon Health,carbon_health,Tier7,Health AI,US,Greenhouse,,https://boards.greenhouse.io/carbonhealth,,1,2026-03-09 02:52:58
+97,Fal.ai,falai,Tier8,AI Infrastructure,US,Ashby,,https://jobs.ashbyhq.com/fal,,1,2026-03-09 02:52:58
+98,Baseten,baseten,Tier8,AI Infrastructure,US,Greenhouse,,https://boards.greenhouse.io/baseten,,1,2026-03-09 02:52:58
+99,Anyscale,anyscale,Tier8,AI Infrastructure,US,Greenhouse,,https://boards.greenhouse.io/anyscale,,1,2026-03-09 02:52:58
+100,Modal Labs,modal_labs,Tier8,AI Infrastructure,US,Ashby,,https://jobs.ashbyhq.com/modal,,1,2026-03-09 02:52:58
+101,Weights & Biases,weights_&_biases,Tier8,MLOps,US,Greenhouse,,https://boards.greenhouse.io/wandb,,1,2026-03-09 02:52:58
+102,Comet ML,comet_ml,Tier8,MLOps,US,Greenhouse,,https://boards.greenhouse.io/cometml,,1,2026-03-09 02:52:58
+103,Arize AI,arize_ai,Tier8,AI Observability,US,Greenhouse,,https://boards.greenhouse.io/arizeai,,1,2026-03-09 02:52:58
+104,LangChain,langchain,Tier8,AI Dev Tools,US,Ashby,,https://jobs.ashbyhq.com/langchain,,1,2026-03-09 02:52:58
+105,Verta AI,verta_ai,Tier8,MLOps,US,Greenhouse,,https://boards.greenhouse.io/verta,,1,2026-03-09 02:52:58
+106,Galileo,galileo,Tier8,AI Evaluation,US,Greenhouse,,https://boards.greenhouse.io/galileo,,1,2026-03-09 02:52:58
+107,Moveworks,moveworks,Tier8,Enterprise AI,US,Greenhouse,,https://boards.greenhouse.io/moveworks,,1,2026-03-09 02:52:58
+108,Writer,writer,Tier8,Enterprise AI,US,Greenhouse,,https://boards.greenhouse.io/writer,,1,2026-03-09 02:52:58
+109,Harvey AI,harvey_ai,Tier8,Legal AI,US,Ashby,,https://jobs.ashbyhq.com/harvey,,1,2026-03-09 02:52:58
+110,Dust,dust,Tier8,Enterprise AI,US,Ashby,,https://jobs.ashbyhq.com/dust,,1,2026-03-09 02:52:58
+111,LinkedIn,linkedin,Tier9,Social/Professional,US,Other,,https://careers.linkedin.com,,1,2026-03-09 02:52:58
+112,Spotify,spotify,Tier9,Media Tech,US,Greenhouse,,https://boards.greenhouse.io/spotify,,1,2026-03-09 02:52:58
+113,Zoom,zoom,Tier9,Communication,US,Greenhouse,,https://boards.greenhouse.io/zoom,,1,2026-03-09 02:52:58
+114,Dropbox,dropbox,Tier9,Cloud Storage,US,Greenhouse,,https://boards.greenhouse.io/dropbox,,1,2026-03-09 02:52:58
+115,Box,box,Tier9,Cloud Storage,US,Greenhouse,,https://boards.greenhouse.io/boxinc,,1,2026-03-09 02:52:58
+116,Asana,asana,Tier9,Productivity,US,Greenhouse,,https://boards.greenhouse.io/asana,,1,2026-03-09 02:52:58
+117,Monday.com,mondaycom,Tier9,Productivity,US,Greenhouse,,https://boards.greenhouse.io/mondaydotcom,,1,2026-03-09 02:52:58
+118,Intercom,intercom,Tier9,CX SaaS,US,Greenhouse,,https://boards.greenhouse.io/intercom,,1,2026-03-09 02:52:58
+119,Amplitude,amplitude,Tier9,Analytics SaaS,US,Greenhouse,,https://boards.greenhouse.io/amplitude,,1,2026-03-09 02:52:58
+120,Mixpanel,mixpanel,Tier9,Analytics SaaS,US,Greenhouse,,https://boards.greenhouse.io/mixpanel,,1,2026-03-09 02:52:58
+121,PostHog,posthog,Tier9,Analytics SaaS,US,Greenhouse,,https://boards.greenhouse.io/posthog,,1,2026-03-09 02:52:58
+122,dbt Labs,dbt_labs,Tier9,Data Tools,US,Greenhouse,,https://boards.greenhouse.io/dbtlabs,,1,2026-03-09 02:52:58
+123,Hex,hex,Tier9,Data Tools,US,Greenhouse,,https://boards.greenhouse.io/hex,,1,2026-03-09 02:52:58
+124,Looker,looker,Tier9,Analytics SaaS,US,Other,,https://careers.google.com,,1,2026-03-09 02:52:58
+125,Thoughtspot,thoughtspot,Tier9,Analytics SaaS,US,Greenhouse,,https://boards.greenhouse.io/thoughtspot,,1,2026-03-09 02:52:58
+126,Grammarly,grammarly,Tier10,AI Writing,US,Greenhouse,,https://boards.greenhouse.io/grammarly,,1,2026-03-09 02:52:58
+127,Duolingo,duolingo,Tier10,EdTech AI,US,Greenhouse,,https://boards.greenhouse.io/duolingo,,1,2026-03-09 02:52:58
+128,Quora,quora,Tier10,Content/AI,US,Greenhouse,,https://boards.greenhouse.io/quora,,1,2026-03-09 02:52:58
+129,Substack,substack,Tier10,Media,US,Greenhouse,,https://boards.greenhouse.io/substack,,1,2026-03-09 02:52:58
+130,Zapier,zapier,Tier10,Automation,US,Greenhouse,,https://boards.greenhouse.io/zapier,,1,2026-03-09 02:52:58
+131,Clay,clay,Tier10,Sales AI,US,Ashby,,https://jobs.ashbyhq.com/clay,,1,2026-03-09 02:52:58
+132,Apollo.io,apolloio,Tier10,Sales AI,US,Greenhouse,,https://boards.greenhouse.io/apolloio,,1,2026-03-09 02:52:58
+133,Outreach,outreach,Tier10,Sales AI,US,Greenhouse,,https://boards.greenhouse.io/outreach,,1,2026-03-09 02:52:58
+134,Gong,gong,Tier10,Revenue AI,US,Greenhouse,,https://boards.greenhouse.io/gong,,1,2026-03-09 02:52:58
+135,Salesloft,salesloft,Tier10,Sales AI,US,Greenhouse,,https://boards.greenhouse.io/salesloft,,1,2026-03-09 02:52:58
+136,Drift,drift,Tier10,Conversational AI,US,Greenhouse,,https://boards.greenhouse.io/drift,,1,2026-03-09 02:52:58
+137,Conversica,conversica,Tier10,Conversational AI,US,Greenhouse,,https://boards.greenhouse.io/conversica,,1,2026-03-09 02:52:58
+138,Guru,guru,Tier10,Knowledge AI,US,Greenhouse,,https://boards.greenhouse.io/guru,,1,2026-03-09 02:52:58
+139,Notion AI,notion_ai,Tier10,AI Productivity,US,Greenhouse,,https://boards.greenhouse.io/notion,,1,2026-03-09 02:52:58
+140,Coda,coda,Tier10,Productivity,US,Greenhouse,,https://boards.greenhouse.io/coda,,1,2026-03-09 02:52:58
+141,ClickUp,clickup,Tier10,Productivity,US,Greenhouse,,https://boards.greenhouse.io/clickup,,1,2026-03-09 02:52:58
+142,Slack,slack,Tier10,Communication,US,Other,,https://salesforce.wd1.myworkdayjobs.com,,1,2026-03-09 02:52:58
+143,Figma AI,figma_ai,Tier10,Design AI,US,Greenhouse,,https://boards.greenhouse.io/figma,,1,2026-03-09 02:52:58
+144,Canva AI,canva_ai,Tier10,Design AI,US,Greenhouse,,https://boards.greenhouse.io/canva,,1,2026-03-09 02:52:58
+145,Loom,loom,Tier10,Video AI,US,Greenhouse,,https://boards.greenhouse.io/loom,,1,2026-03-09 02:52:58
+146,Otter.ai,otterai,Tier10,AI Transcription,US,Greenhouse,,https://boards.greenhouse.io/otter,,1,2026-03-09 02:52:58
+147,Fireflies.ai,firefliesai,Tier10,AI Meeting,US,Other,,https://fireflies.ai/careers,,1,2026-03-09 02:52:58
+148,Tome,tome,Tier10,AI Presentation,US,Greenhouse,,https://boards.greenhouse.io/tome,,1,2026-03-09 02:52:58
+149,Perplexity Pro,perplexity_pro,Tier10,AI Search,US,Greenhouse,,https://boards.greenhouse.io/perplexityai,,1,2026-03-09 02:52:58
+150,You.com,youcom,Tier10,AI Search,US,Greenhouse,,https://boards.greenhouse.io/youcom,,1,2026-03-09 02:52:58
+151,Poe,poe,Tier10,AI Platform,US,Greenhouse,,https://boards.greenhouse.io/quora,,1,2026-03-09 02:52:58
+152,Replicate,replicate,Tier10,AI Infrastructure,US,Ashby,,https://jobs.ashbyhq.com/replicate,,1,2026-03-09 02:52:58
+153,Weights & Biases II,weights_&_biases_ii,Tier10,AI Tools,US,Greenhouse,,https://boards.greenhouse.io/wandb,,1,2026-03-09 02:52:58
+154,Clearbit,clearbit,Tier10,Data/AI,US,Greenhouse,,https://boards.greenhouse.io/clearbit,,1,2026-03-09 02:52:58
+155,Lusha,lusha,Tier10,Sales AI,US,Greenhouse,,https://boards.greenhouse.io/lusha,,1,2026-03-09 02:52:58
+156,ZoomInfo,zoominfo,Tier10,Sales AI,US,Greenhouse,,https://boards.greenhouse.io/zoominfo,,1,2026-03-09 02:52:58
+157,Demandbase,demandbase,Tier10,Marketing AI,US,Greenhouse,,https://boards.greenhouse.io/demandbase,,1,2026-03-09 02:52:58
+158,6sense,6sense,Tier10,Revenue AI,US,Greenhouse,,https://boards.greenhouse.io/6sense,,1,2026-03-09 02:52:58
+159,Chorus.ai,chorusai,Tier10,Revenue AI,US,Greenhouse,,https://boards.greenhouse.io/chorusai,,1,2026-03-09 02:52:58
+160,Clari,clari,Tier10,Revenue AI,US,Greenhouse,,https://boards.greenhouse.io/clari,,1,2026-03-09 02:52:58
+161,Highspot,highspot,Tier10,Sales Enablement,US,Greenhouse,,https://boards.greenhouse.io/highspot,,1,2026-03-09 02:52:58
+162,Seismic,seismic,Tier10,Sales Enablement,US,Greenhouse,,https://boards.greenhouse.io/seismic,,1,2026-03-09 02:52:58
+163,UiPath,uipath,Tier10,RPA/AI,US,Greenhouse,,https://boards.greenhouse.io/uipath,,1,2026-03-09 02:52:58
+164,C3.ai,c3ai,Tier10,Enterprise AI,US,Greenhouse,,https://boards.greenhouse.io/c3ai,,1,2026-03-09 02:52:58
+165,DataRobot,datarobot,Tier10,AutoML AI,US,Greenhouse,,https://boards.greenhouse.io/datarobot,,1,2026-03-09 02:52:58
+166,Automation Anywhere,automation_anywhere,Tier10,RPA/AI,US,Greenhouse,,https://boards.greenhouse.io/automationanywhere,,1,2026-03-09 02:52:58
+167,Samsara,samsara,Tier10,IoT/AI,US,Greenhouse,,https://boards.greenhouse.io/samsara,,1,2026-03-09 02:52:58
+168,ServiceTitan,servicetitan,Tier10,Field Service AI,US,Greenhouse,,https://boards.greenhouse.io/servicetitan,,1,2026-03-09 02:52:58
+169,FullStory,fullstory,Tier10,Digital Analytics,US,Greenhouse,,https://boards.greenhouse.io/fullstory,,1,2026-03-09 02:52:58
+170,Heap Analytics,heap_analytics,Tier10,Product Analytics,US,Greenhouse,,https://boards.greenhouse.io/heap,,1,2026-03-09 02:52:58
+171,Pendo,pendo,Tier10,Product Analytics AI,US,Greenhouse,,https://boards.greenhouse.io/pendo,,1,2026-03-09 02:52:58
+172,Contentsquare,contentsquare,Tier10,Digital Analytics,US,Greenhouse,,https://boards.greenhouse.io/contentsquare,,1,2026-03-09 02:52:58
+173,Quantum Metric,quantum_metric,Tier10,Analytics AI,US,Greenhouse,,https://boards.greenhouse.io/quantummetric,,1,2026-03-09 02:52:58
+174,UserTesting,usertesting,Tier10,UX Research AI,US,Greenhouse,,https://boards.greenhouse.io/usertesting,,1,2026-03-09 02:52:58
+175,Qualtrics,qualtrics,Tier10,Experience AI,US,Other,,https://www.qualtrics.com/careers,,1,2026-03-09 02:52:58
+176,Medallia,medallia,Tier10,Experience AI,US,Greenhouse,,https://boards.greenhouse.io/medallia,,1,2026-03-09 02:52:58
+177,Fivetran,fivetran,Tier10,Data Integration,US,Greenhouse,,https://boards.greenhouse.io/fivetran,,1,2026-03-09 02:52:58
+178,Airbyte,airbyte,Tier10,Data Integration,US,Greenhouse,,https://boards.greenhouse.io/airbyte,,1,2026-03-09 02:52:58
+179,Astronomer,astronomer,Tier10,Data Orchestration,US,Greenhouse,,https://boards.greenhouse.io/astronomer,,1,2026-03-09 02:52:58
+180,Monte Carlo Data,monte_carlo_data,Tier10,Data Observability,US,Greenhouse,,https://boards.greenhouse.io/montecarlodatamonitoring,,1,2026-03-09 02:52:58
+181,Starburst Data,starburst_data,Tier10,Data Query,US,Greenhouse,,https://boards.greenhouse.io/starburst,,1,2026-03-09 02:52:58
+182,Hightouch,hightouch,Tier10,Reverse ETL,US,Greenhouse,,https://boards.greenhouse.io/hightouch,,1,2026-03-09 02:52:58
+183,Census Analytics,census_analytics,Tier10,Reverse ETL,US,Greenhouse,,https://boards.greenhouse.io/census,,1,2026-03-09 02:52:58
+184,Wiz,wiz,Tier10,Cloud Security AI,US,Greenhouse,,https://boards.greenhouse.io/wiz,,1,2026-03-09 02:52:58
+185,Lacework,lacework,Tier10,Cloud Security AI,US,Greenhouse,,https://boards.greenhouse.io/lacework,,1,2026-03-09 02:52:58
+186,Vanta,vanta,Tier10,Compliance AI,US,Greenhouse,,https://boards.greenhouse.io/vanta,,1,2026-03-09 02:52:58
+187,Drata,drata,Tier10,Compliance AI,US,Greenhouse,,https://boards.greenhouse.io/drata,,1,2026-03-09 02:52:58
+188,Lattice,lattice,Tier10,People Analytics AI,US,Greenhouse,,https://boards.greenhouse.io/lattice,,1,2026-03-09 02:52:58
+189,Culture Amp,culture_amp,Tier10,People Analytics,US,Greenhouse,,https://boards.greenhouse.io/cultureamp,,1,2026-03-09 02:52:58
+190,Leapsome,leapsome,Tier10,HR AI,US,Greenhouse,,https://boards.greenhouse.io/leapsome,,1,2026-03-09 02:52:58
+191,Navan,navan,Tier10,Travel/Expense AI,US,Greenhouse,,https://boards.greenhouse.io/navan,,1,2026-03-09 02:52:58
+192,Mercury,mercury,Tier10,FinTech,US,Greenhouse,,https://boards.greenhouse.io/mercury,,1,2026-03-09 02:52:58
+193,Modern Treasury,modern_treasury,Tier10,Financial Ops AI,US,Greenhouse,,https://boards.greenhouse.io/moderntreasury,,1,2026-03-09 02:52:58
+194,Viz.ai,vizai,Tier10,Clinical AI,US,Greenhouse,,https://boards.greenhouse.io/vizai,,1,2026-03-09 02:52:58
+195,Innovaccer,innovaccer,Tier10,Health Data AI,US,Greenhouse,,https://boards.greenhouse.io/innovaccer,,1,2026-03-09 02:52:58
+196,Aidoc,aidoc,Tier10,Medical Imaging AI,US,Greenhouse,,https://boards.greenhouse.io/aidoc,,1,2026-03-09 02:52:58
+197,Sprinklr,sprinklr,Tier10,CX AI Platform,US,Greenhouse,,https://boards.greenhouse.io/sprinklr,,1,2026-03-09 02:52:58
+198,Productboard,productboard,Tier10,Product Intelligence,US,Greenhouse,,https://boards.greenhouse.io/productboard,,1,2026-03-09 02:52:58
+199,Benchling,benchling,Tier10,Lab AI,US,Greenhouse,,https://boards.greenhouse.io/benchling,,1,2026-03-09 02:52:58
+200,Sigma Computing,sigma_computing,Tier10,Analytics AI,US,Greenhouse,,https://boards.greenhouse.io/sigmacomputing,,1,2026-03-09 02:52:58

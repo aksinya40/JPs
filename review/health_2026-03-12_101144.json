@@ -1,0 +1,1266 @@
+{
+  "timestamp": "2026-03-12 10:11:44",
+  "total_rows": 3061,
+  "active_rows": 2976,
+  "health_score": 95.72,
+  "critical_count": 2,
+  "warning_count": 1597,
+  "total_checks": 106118,
+  "total_valid": 101579,
+  "coverage": {
+    "title_normalized": {
+      "valid": 2976,
+      "total": 2976,
+      "pct": 100.0
+    },
+    "ai_keywords_hit": {
+      "valid": 2976,
+      "total": 2976,
+      "pct": 100.0
+    },
+    "description_snippet_valid": {
+      "valid": 2773,
+      "total": 2976,
+      "pct": 93.2
+    },
+    "skills_extracted_valid": {
+      "valid": 2091,
+      "total": 2976,
+      "pct": 70.3
+    },
+    "posted_date_set": {
+      "valid": 2467,
+      "total": 2976,
+      "pct": 82.9
+    },
+    "work_mode_set": {
+      "valid": 2976,
+      "total": 2976,
+      "pct": 100.0
+    },
+    "location_raw_set": {
+      "valid": 2612,
+      "total": 2976,
+      "pct": 87.8
+    },
+    "seniority_set": {
+      "valid": 2976,
+      "total": 2976,
+      "pct": 100.0
+    },
+    "ai_role_signature_set": {
+      "valid": 2976,
+      "total": 2976,
+      "pct": 100.0
+    }
+  },
+  "violations": [
+    {
+      "gold_id": 4,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 4,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 4,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 5,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 5,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 5,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 6,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 6,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 6,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 8,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 8,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 8,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 10,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 10,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 10,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 12,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 12,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 12,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 13,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 13,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 13,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 14,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 14,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 16,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 16,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 16,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 17,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 17,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 17,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 18,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 18,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 18,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 19,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 19,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 20,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 20,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 21,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 21,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 21,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 24,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 24,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 24,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 25,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 25,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 29,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 29,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 30,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 30,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 31,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 31,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 31,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 32,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 32,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 32,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 33,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 33,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 33,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 34,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 34,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 34,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 37,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 37,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 37,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 38,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 38,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 39,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 39,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 42,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 42,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 43,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 43,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 44,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 44,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 45,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 46,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 47,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 48,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 49,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 50,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 50,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 51,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 51,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 52,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 52,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 52,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 53,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 53,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 53,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 54,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 54,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 55,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 55,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 56,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 56,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 57,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 57,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 58,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 58,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 59,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 59,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 60,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 61,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 61,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 62,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 62,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 63,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 64,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=40"
+    },
+    {
+      "gold_id": 64,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 65,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=40"
+    },
+    {
+      "gold_id": 65,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 66,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=40"
+    },
+    {
+      "gold_id": 66,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 67,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=40"
+    },
+    {
+      "gold_id": 67,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 68,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=40"
+    },
+    {
+      "gold_id": 68,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 69,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 69,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 70,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 70,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 71,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 72,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 73,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 74,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 75,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 77,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 78,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 78,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 79,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 80,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 80,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 80,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 81,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 82,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 83,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 84,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 86,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 86,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 88,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 89,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 92,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 92,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 97,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 97,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 97,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 98,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 98,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 98,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 99,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 99,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 99,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 100,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 102,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 103,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 103,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 104,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 104,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 104,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 105,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 105,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 105,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 106,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 106,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 106,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 107,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 107,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 107,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 108,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 108,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 108,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 109,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 109,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 109,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 110,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 110,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 110,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 111,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 111,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 111,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 112,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 112,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 112,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 113,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 113,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 113,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 114,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 114,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 114,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 115,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 115,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 115,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 116,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 116,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 116,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 117,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 117,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 117,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    },
+    {
+      "gold_id": 118,
+      "rule": "short_description",
+      "severity": "WARNING",
+      "details": "description_snippet len=0"
+    },
+    {
+      "gold_id": 118,
+      "rule": "missing_skills",
+      "severity": "WARNING",
+      "details": "skills_extracted empty"
+    },
+    {
+      "gold_id": 118,
+      "rule": "missing_posted_date",
+      "severity": "WARNING",
+      "details": "posted_date is NULL"
+    }
+  ],
+  "violation_counts": {
+    "missing_skills": 885,
+    "missing_posted_date": 509,
+    "short_description": 203,
+    "title_verbatim_rate": 1,
+    "skills_missing_rate": 1
+  }
+}

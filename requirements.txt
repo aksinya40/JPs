@@ -1,0 +1,6 @@
+# AI Analyst Jobs — Python Dependencies
+# Requires Python >= 3.10 (use: uv venv --python 3.11 .venv)
+# Core pipeline (job_db_pipeline.py) uses only stdlib.
+# LinkedIn collection (collect_jobs.py) requires these:
+python-jobspy>=1.1.0
+pandas>=2.0.0

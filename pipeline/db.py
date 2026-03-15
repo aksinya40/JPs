@@ -5,7 +5,9 @@ Connection management, helpers, schema initialization (cmd_init_db),
 and all path constants.
 """
 import re
+import shutil
 import sqlite3
+from contextlib import contextmanager
 from datetime import datetime
 from pathlib import Path
 
@@ -33,6 +35,26 @@ def get_db(path: Path = None) -> sqlite3.Connection:
     conn.execute("PRAGMA journal_mode=WAL")
     conn.execute("PRAGMA foreign_keys=ON")
     return conn
+
+
+@contextmanager
+def open_db(path: Path = None):
+    """Context manager for database connections. Auto-commits and closes."""
+    conn = get_db(path)
+    try:
+        yield conn
+        conn.commit()
+    finally:
+        conn.close()
+
+
+def backup_db(path: Path = None):
+    """Create a .bak copy of the database before destructive operations."""
+    p = path or DB_PATH
+    if p.exists():
+        bak = p.with_suffix('.db.bak')
+        shutil.copy2(p, bak)
+        log(f"  Backup created: {bak.name}")
 
 
 def row_to_dict(row) -> dict:

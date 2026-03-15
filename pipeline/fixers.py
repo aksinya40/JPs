@@ -8,7 +8,8 @@ ai_role_signature classification, skills extraction, and the
 import re
 from datetime import datetime
 
-from pipeline.db import get_db, log
+from pipeline.constants import AGGREGATOR_DOMAINS
+from pipeline.db import get_db, log, backup_db
 from pipeline.parsers import (
     canonicalize_platform,
     compute_title_ai_terms,
@@ -139,6 +140,7 @@ def cmd_fix_data_quality():
     12. Fallback posted_date from raw_postings collected_at
     13. Backfill short description_snippets from raw_postings body_raw
     """
+    backup_db()
     conn = get_db()
     cur = conn.cursor()
 
@@ -153,18 +155,10 @@ def cmd_fix_data_quality():
 
     # ── Step 2: DELETE aggregator URLs ──
     log("Step 2: Deleting aggregator URLs...")
-    agg_conditions = ' OR '.join(
-        f"job_url LIKE '%{d}%'" for d in [
-            'builtin.com', 'builtinnyc.com', 'builtinsf.com',
-            'builtinchicago.com', 'builtinaustin.com', 'builtinboston.com',
-            'builtincolorado.com', 'builtinla.com', 'builtinseattle.com',
-            'theladders.com', 'themuse.com', 'towardsai.net',
-            'wallstreetcareers.com', 'datasciencessjobs.com', 'technyjobs.com',
-            'wellfound.com', 'angel.co',
-        ]
-    )
+    agg_conditions = ' OR '.join('job_url LIKE ?' for _ in AGGREGATOR_DOMAINS)
+    agg_params = [f'%{d}%' for d in AGGREGATOR_DOMAINS]
     before = cur.execute("SELECT COUNT(*) FROM job_postings_gold").fetchone()[0]
-    cur.execute(f"DELETE FROM job_postings_gold WHERE {agg_conditions}")
+    cur.execute(f"DELETE FROM job_postings_gold WHERE {agg_conditions}", agg_params)
     after = cur.execute("SELECT COUNT(*) FROM job_postings_gold").fetchone()[0]
     conn.commit()
     log(f"  Deleted {before - after} aggregator rows (was {before}, now {after})")

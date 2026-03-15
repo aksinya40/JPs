@@ -1,5 +1,7 @@
 # JPs — Unified AI Analyst Jobs Research Pipeline
 
+[![Tests](https://github.com/aksinya40/JPs/actions/workflows/test.yml/badge.svg)](https://github.com/aksinya40/JPs/actions/workflows/test.yml)
+
 A unified research pipeline for collecting, merging, enriching, and analyzing AI-adjacent analyst job postings from 200+ US tech companies.
 
 ## Overview

@@ -6,6 +6,8 @@ and promote raw_postings → job_postings_gold.
 
 Commands: cmd_merge_dbs, cmd_collect_ats, cmd_ingest_raw
 """
+from __future__ import annotations
+
 import json
 import re
 import sqlite3
@@ -14,7 +16,6 @@ import time
 import urllib.error
 import urllib.request
 from datetime import datetime
-from typing import Dict, List, Tuple
 
 from pipeline.constants import HYBRID_PATTERNS, REMOTE_PATTERNS
 from pipeline.db import (
@@ -205,7 +206,7 @@ _CITY_TO_STATE = {
 # Location / seniority helpers
 # ═══════════════════════════════════════════════════════════════════════════════
 
-def _parse_location(location_raw: str) -> Tuple[bool, str, str, str, str]:
+def _parse_location(location_raw: str) -> tuple[bool, str, str, str, str]:
     """Parse raw location → (is_us, city, state, standardized, work_mode)."""
     if not location_raw:
         return True, '', '', '', 'Unknown'
@@ -309,7 +310,7 @@ def _detect_seniority(title: str) -> str:
 # ATS fetch helpers
 # ═══════════════════════════════════════════════════════════════════════════════
 
-def _fetch_greenhouse(slug: str) -> List[Dict]:
+def _fetch_greenhouse(slug: str) -> list[dict]:
     """Fetch jobs from Greenhouse public boards API (free, no auth)."""
     url = f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs?content=true"
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
@@ -343,7 +344,7 @@ def _fetch_greenhouse(slug: str) -> List[Dict]:
     return jobs
 
 
-def _fetch_lever(slug: str) -> List[Dict]:
+def _fetch_lever(slug: str) -> list[dict]:
     """Fetch postings from Lever public API (free, no auth)."""
     url = f"https://api.lever.co/v0/postings/{slug}?mode=json"
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})

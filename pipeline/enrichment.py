@@ -101,7 +101,8 @@ def cmd_verify_and_enrich():
         """Get rows needing enrichment."""
         q = "SELECT * FROM job_postings_gold WHERE enrich_status IN ('pending','failed')"
         if platform_filter:
-            q += f" AND (source_platform = '{platform_filter}' OR job_url LIKE '%{platform_filter}%')"
+            q += " AND (source_platform = ? OR job_url LIKE ?)"
+            return cur.execute(q, (platform_filter, f'%{platform_filter}%')).fetchall()
         return cur.execute(q).fetchall()
 
     def _update_enriched(gid, updates: dict, status='api_enriched'):

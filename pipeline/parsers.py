@@ -4,10 +4,11 @@ AI Analyst Jobs — Pure Text Parsers
 All normalize/extract/strip functions. These are pure functions with
 no database access — they transform text → structured data.
 """
+from __future__ import annotations
+
 import hashlib
 import re
 from datetime import datetime, date
-from typing import Optional, Dict, List, Tuple
 from urllib.parse import urlparse
 
 from pipeline.constants import (
@@ -58,7 +59,7 @@ def canonical_job_key(source_platform: str, source_job_id: str,
     return hashlib.sha256(raw.encode()).hexdigest()
 
 
-def compute_title_ai_terms(title: str) -> Tuple[int, str]:
+def compute_title_ai_terms(title: str) -> tuple[int, str]:
     """Compute has_ai_in_title (0/1) and comma-separated title_ai_terms."""
     if not title:
         return 0, ''
@@ -70,7 +71,7 @@ def compute_title_ai_terms(title: str) -> Tuple[int, str]:
     return has_ai, ', '.join(terms)
 
 
-def extract_salary(text: str) -> Optional[Dict]:
+def extract_salary(text: str) -> dict | None:
     """Extract salary from text. Returns dict or None."""
     if not text:
         return None
@@ -131,7 +132,7 @@ def extract_salary(text: str) -> Optional[Dict]:
     return None
 
 
-def extract_skills(text: str) -> Tuple[str, int, int]:
+def extract_skills(text: str) -> tuple[str, int, int]:
     """Extract skills, has_python, has_sql from text."""
     if not text:
         return '', 0, 0
@@ -159,7 +160,7 @@ def extract_skills(text: str) -> Tuple[str, int, int]:
     return ', '.join(skills), has_python, has_sql
 
 
-def extract_company_from_url(url: str) -> Optional[str]:
+def extract_company_from_url(url: str) -> str | None:
     """Extract company name from ATS URL slug patterns."""
     if not url:
         return None

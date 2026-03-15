@@ -4,8 +4,9 @@ AI Analyst Jobs — Title Normalization
 Title cleaning, normalization (Type A / B / Verbatim),
 out-of-scope flagging, and the cmd_fix_title_normalization command.
 """
+from __future__ import annotations
+
 import re
-from typing import List, Dict
 
 from pipeline.constants import (
     AI_KEYWORDS,

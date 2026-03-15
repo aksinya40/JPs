@@ -5,8 +5,9 @@ Functions that classify, filter, or categorize job data:
 AI keyword matching, role exclusion, work mode resolution,
 AI role signature classification.
 """
+from __future__ import annotations
+
 import re
-from typing import List
 
 from pipeline.constants import (
     AI_KEYWORDS,
@@ -21,7 +22,7 @@ from pipeline.constants import (
 )
 
 
-def _check_false_positives(text: str, hits: List[str]) -> set:
+def _check_false_positives(text: str, hits: list[str]) -> set:
     """Detect word-boundary false positives like 'email'→'ml'."""
     fps = set()
     if 'ml' in hits:
@@ -41,7 +42,7 @@ def _check_false_positives(text: str, hits: List[str]) -> set:
     return fps
 
 
-def match_ai_keywords(text: str) -> List[str]:
+def match_ai_keywords(text: str) -> list[str]:
     """Return list of AI keywords found in text using word-boundary regex."""
     if not text:
         return []

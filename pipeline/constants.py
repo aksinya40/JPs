@@ -4,11 +4,12 @@ AI Analyst Jobs — Shared Constants
 All data constants, compiled regex patterns, and lookup tables used
 across the pipeline. No runtime logic — only declarations.
 """
+from __future__ import annotations
+
 import re
-from typing import List, Tuple
 
 # ─── AI Keywords (word-boundary regex, case-insensitive) ─────────────────────
-AI_KEYWORDS: List[str] = [
+AI_KEYWORDS: list[str] = [
     r'\bllm\b', r'\blarge language model\b', r'\bgenerative ai\b', r'\bgenai\b',
     r'\bgen ai\b', r'\bagentic\b', r'\bai agent\b', r'\bai agents\b',
     r'\bchatgpt\b', r'\bclaude\b', r'\bgemini\b', r'\bgpt-4\b', r'\bgpt-5\b',
@@ -24,7 +25,7 @@ AI_KEYWORDS: List[str] = [
 ]
 
 # Title AI terms: regex pattern → human-readable label
-TITLE_AI_TERMS: List[Tuple[str, str]] = [
+TITLE_AI_TERMS: list[tuple[str, str]] = [
     (r'\bartificial general intelligence\b', 'Artificial General Intelligence'),
     (r'\bAGI\b', 'AGI'),
     (r'\bgenerative ai\b', 'generative AI'), (r'\bgenai\b', 'GenAI'),
@@ -61,7 +62,7 @@ ROLE_CLUSTERS_INCLUDED = {
     'Business Operations Analyst (AI & Automation)',
 }
 
-ROLE_EXCLUSION_PATTERNS: List[str] = [
+ROLE_EXCLUSION_PATTERNS: list[str] = [
     r'\bBI Engineer\b', r'\bML Engineer\b', r'\bMLOps Engineer\b',
     r'\bLLM Engineer\b', r'\bAI Platform Engineer\b',
     r'\bSoftware Engineer\b', r'\bInfrastructure Engineer\b',
@@ -113,7 +114,7 @@ SALARY_PATTERNS = [
 NON_USD_PATTERNS = re.compile(r'(?:CAD|C\$|CA\$|GBP|£|EUR|€)', re.IGNORECASE)
 
 # ─── Skills Patterns ─────────────────────────────────────────────────────────
-SKILL_PATTERNS: List[Tuple[str, str]] = [
+SKILL_PATTERNS: list[tuple[str, str]] = [
     ('Python', r'\bpython\b'), ('SQL', r'\bsql\b'),
     ('R', r'(?<![A-Za-z])\bR\b(?!\s*&|\w)'),
     ('Tableau', r'\btableau\b'), ('Looker', r'\blooker\b'),
@@ -181,16 +182,16 @@ BLOCKED_DOMAINS = {
 }
 
 # ─── Work Mode Detection ─────────────────────────────────────────────────────
-REMOTE_PATTERNS: List[str] = [r'\bremote\b', r'\bwork from home\b', r'\bwfh\b', r'\bfully remote\b']
-HYBRID_PATTERNS: List[str] = [r'\bhybrid\b', r'\bflexible\b', r'\b\d+\s*days.*office\b']
+REMOTE_PATTERNS: list[str] = [r'\bremote\b', r'\bwork from home\b', r'\bwfh\b', r'\bfully remote\b']
+HYBRID_PATTERNS: list[str] = [r'\bhybrid\b', r'\bflexible\b', r'\b\d+\s*days.*office\b']
 
 # ─── Applied Scientist Filtering ─────────────────────────────────────────────
-APPLIED_SCIENTIST_KEEP_KEYWORDS: List[str] = [
+APPLIED_SCIENTIST_KEEP_KEYWORDS: list[str] = [
     'analytics', 'measurement', 'insights', 'ads science',
     'experimentation', 'causal', 'decision', 'ranking',
     'recommendation', 'personalization', 'search relevance',
 ]
-APPLIED_SCIENTIST_REMOVE_KEYWORDS: List[str] = [
+APPLIED_SCIENTIST_REMOVE_KEYWORDS: list[str] = [
     'llm agent', 'code agent', 'foundation model', 'pretraining',
     'robotics', 'computer vision', 'speech', 'autonomous',
     'systems', 'infrastructure', 'compiler',
@@ -276,23 +277,33 @@ STATE_ABBR_TO_NAME = {
 }
 
 # ─── AI Role Signature Constants ─────────────────────────────────────────────
-EMERGING_AI_PATTERNS: List[str] = [
+EMERGING_AI_PATTERNS: list[str] = [
     r'\bai analyst\b', r'\bllm analyst\b', r'\bagentic analytics\b',
     r'\bdecision intelligence analyst\b', r'\bai evaluation analyst\b',
     r'\bgenerative ai analyst\b',
 ]
 
-AI_TITLE_TERMS: List[str] = [
+AI_TITLE_TERMS: list[str] = [
     r'\bai\b', r'\bllm\b', r'\bagentic\b', r'\bgenai\b',
     r'\bgenerative ai\b', r'\bml\b', r'\bnlp\b',
     r'\bartificial general intelligence\b', r'\bagi\b',
 ]
 
-LLM_GENAI_TERMS: List[str] = [
+LLM_GENAI_TERMS: list[str] = [
     r'\bllm\b', r'\bgenai\b', r'\bgpt\b', r'\bgpt-4\b',
     r'\bfoundation model\b', r'\blarge language model\b',
     r'\bgenerative ai\b',
 ]
 
-AGENTIC_TERMS: List[str] = [r'\bagentic\b', r'\bai agent\b', r'\bai agents\b']
-AI_TEAM_TERMS: List[str] = [r'\bai platform\b', r'\bai team\b', r'\bfoundation ai\b']
+AGENTIC_TERMS: list[str] = [r'\bagentic\b', r'\bai agent\b', r'\bai agents\b']
+AI_TEAM_TERMS: list[str] = [r'\bai platform\b', r'\bai team\b', r'\bfoundation ai\b']
+
+# ─── Aggregator domains to exclude ──────────────────────────────────────────
+AGGREGATOR_DOMAINS: list[str] = [
+    'builtin.com', 'builtinnyc.com', 'builtinsf.com',
+    'builtinchicago.com', 'builtinaustin.com', 'builtinboston.com',
+    'builtincolorado.com', 'builtinla.com', 'builtinseattle.com',
+    'theladders.com', 'themuse.com', 'towardsai.net',
+    'wallstreetcareers.com', 'datasciencessjobs.com', 'technyjobs.com',
+    'wellfound.com', 'angel.co',
+]
